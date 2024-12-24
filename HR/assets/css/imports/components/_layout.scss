@@ -1,0 +1,436 @@
+// -----------------------------------------------
+// layout-1
+// -----------------------------------------------
+.layout-1 {
+  padding: 0 2rem;
+  &__inner {
+    max-width: 124rem;
+    margin: auto;
+    position: relative;
+    border-top: 3px solid rgba($color: #0f0f0f, $alpha: 0.1);
+    @include sp {
+      max-width: 31.1rem;
+      border-top-width: 2px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 11.1rem;
+      height: 3px;
+      background-color: $yellow;
+      @include sp {
+        height: 2px;
+        top: -2px;
+        width: 2.7rem;
+      }
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 7.8rem 0 20rem;
+    @include sp {
+      flex-direction: column;
+      padding: 2rem 0 12rem;
+    }
+  }
+  &__left {
+    // width: 26.8rem;
+    width: 21.6%;
+    @include sp {
+      width: 100%;
+      margin-bottom: 3.5rem;
+    }
+  }
+  &__buttonArea {
+    margin-top: 3.8rem;
+    .basic-button {
+      margin: 1.5rem 0;
+    }
+    @include sp {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.4rem;
+      margin-top: 3rem;
+      .basic-button {
+        margin: 0;
+        a {
+          min-height: 5.2rem;
+        }
+      }
+    }
+  }
+  &__title1 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 4.6rem; /* 127.778% */
+    letter-spacing: 0.144rem;
+    margin-bottom: 4.6rem;
+    @include sp {
+      font-size: 2.4rem;
+      line-height: 3.4rem; /* 141.667% */
+      letter-spacing: 0.096rem;
+      margin-bottom: 3.6rem;
+    }
+    span {
+      font-family: $Poppins;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3.6rem; /* 225% */
+      letter-spacing: 0.08rem;
+      opacity: 0.4;
+      display: block;
+      margin-top: 0.7rem;
+      @include sp {
+        font-size: 1.2rem;
+        letter-spacing: 0.06rem;
+        line-height: 1.5;
+      }
+    }
+  }
+  &__p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3.6rem; /* 240% */
+    letter-spacing: 0.03rem;
+    text-align: justify;
+    @include sp {
+      font-size: 1.4rem;
+      line-height: 3rem; /* 214.286% */
+      letter-spacing: 0.028rem;
+    }
+  }
+  &__right {
+    // width: 83.3rem;
+    width: 67.2%;
+    padding: 1rem 0 0 0;
+    position: relative;
+    @include sp {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 6rem;
+    }
+  }
+  &__cardArea {
+    display: grid;
+    &.col-2 {
+      gap: 3.9rem;
+      grid-template-columns: repeat(2, 1fr);
+      @include sp {
+        gap: 1.5rem;
+      }
+    }
+    &.col-1 {
+      gap: 3rem;
+      @include sp {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+    &.sp-col-1 {
+      @include sp {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+  //carousel
+  &__carousel {
+    margin-top: 37rem;
+    position: relative;
+    padding: 36rem 0 2rem;
+    @include sp {
+      padding: 10rem 0;
+      margin-top: 17rem;
+    }
+    .swiper {
+      padding: 3rem;
+      position: absolute;
+      width: 102rem;
+      left: 13.5rem;
+      top: 0;
+      @include sp {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 3rem 0;
+      }
+    }
+    .swiper-slide {
+      padding: 0 2rem;
+      box-sizing: border-box;
+      @include sp {
+        padding: 0 1rem;
+        width: 22.8rem;
+      }
+    }
+  }
+  &__carousel-bg {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: calc(100% + (100vw - 124rem) / 2);
+    height: 50rem;
+    border-radius: 1.2rem;
+    background: #fff;
+    box-shadow: 0px 0px 30px 0px rgba(15, 15, 15, 0.15);
+    @include sp {
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 25rem;
+      border-radius: 0;
+    }
+  }
+  &__carousel-progress {
+    position: relative;
+    width: 64.8rem;
+    margin-left: auto;
+    @include sp {
+      display: none;
+    }
+    .swiper-pagination-progressbar {
+      background-color: rgba($color: #0f0f0f, $alpha: 0.1);
+      height: 2px;
+      span {
+        background-color: #0f0f0f;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------
+// layout-2
+// -----------------------------------------------
+.layout-2 {
+  position: relative;
+  &::before {
+    content: '';
+    opacity: 0.7;
+    background: linear-gradient(0deg, #0f0f0f 0%, rgba(15, 15, 15, 0) 100%);
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48rem;
+    @include sp {
+      height: 100%;
+    }
+  }
+  &__bg {
+    height: 65rem;
+    @include sp {
+      height: 42rem;
+    }
+  }
+  &__inner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 1;
+    padding: 0rem 8rem 5.5rem;
+    @include sp {
+      padding: 0rem 3rem 2.3rem;
+      display: block;
+    }
+  }
+  // &__textArea {
+  // }
+  &__title {
+    color: #fff;
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 4.8rem; /* 133.333% */
+    letter-spacing: 0.144rem;
+    @include sp {
+      font-size: 2.6rem;
+      line-height: 3.4rem; /* 130.769% */
+      letter-spacing: 0.104rem;
+    }
+    span {
+      display: block;
+      font-family: $Poppins;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3.6rem; /* 225% */
+      letter-spacing: 0.08rem;
+      margin-top: 0.5rem;
+      @include sp {
+        font-size: 1.2rem;
+        line-height: 3.6rem; /* 300% */
+        letter-spacing: 0.06rem;
+        margin-top: -0.4rem;
+      }
+    }
+  }
+  &__p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3.2rem; /* 213.333% */
+    letter-spacing: 0.03rem;
+    max-width: 35.7rem;
+    margin-top: 3.4rem;
+    @include sp {
+      font-size: 1.4rem;
+      line-height: 3rem; /* 214.286% */
+      letter-spacing: 0.028rem;
+      margin: 0.5rem 0 2.2rem;
+    }
+  }
+  &__buttonArea {
+    padding-bottom: 1rem;
+  }
+}
+
+// -----------------------------------------------
+// layout-3
+// -----------------------------------------------
+.layout-3 {
+  padding: 20rem 0;
+  position: relative;
+  @include sp {
+    padding: 10rem 0;
+  }
+  &__container {
+    position: relative;
+    width: 102.4rem;
+    margin: auto;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(15, 15, 15, 0.15);
+    @include sp {
+      width: 31.1rem;
+    }
+    &::before {
+      content: '';
+      opacity: 0.7;
+      background: linear-gradient(0deg, #0f0f0f 0%, rgba(15, 15, 15, 0) 100%);
+      mix-blend-mode: multiply;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 27.7rem;
+      @include sp {
+        height: 100%;
+      }
+    }
+  }
+  &__bg {
+    height: 52rem;
+    @include sp {
+      height: 34rem;
+    }
+  }
+  &__container-inner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 1;
+    padding: 0rem 5.5rem 5.2rem;
+    @include sp {
+      padding: 0rem 2.5rem 2.3rem;
+      display: block;
+    }
+  }
+  // &__textArea {
+  // }
+  &__title {
+    color: #fff;
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 4.6rem;
+    letter-spacing: 0.144rem;
+    @include sp {
+      font-size: 2.6rem;
+      line-height: 3.4rem; /* 130.769% */
+      letter-spacing: 0.104rem;
+    }
+    span {
+      display: block;
+      font-family: $Poppins;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3.6rem; /* 225% */
+      letter-spacing: 0.08rem;
+      margin-top: 0.5rem;
+      @include sp {
+        font-size: 1.2rem;
+        line-height: 3.6rem; /* 300% */
+        letter-spacing: 0.06rem;
+        margin: -0.3rem 0 2rem;
+      }
+    }
+  }
+  &__buttonArea {
+    padding-bottom: 1.1rem;
+  }
+}
+// -----------------------------------------------
+// layout-4
+// -----------------------------------------------
+
+.layout-4 {
+  margin: 0rem 0 26rem;
+  @include sp {
+    margin: 0rem 0 16rem;
+  }
+  &__container {
+    max-width: 113.7rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 9.6rem;
+    row-gap: 8.6rem;
+    @include sp {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 31.1rem;
+      row-gap: 5rem;
+    }
+  }
+  // &__item {
+
+  // }
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem; /* 100% */
+    letter-spacing: 0.06rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.3rem;
+    @include sp {
+      font-size: 1.6rem;
+      line-height: 2rem; /* 125% */
+      letter-spacing: 0.064rem;
+      margin-bottom: 1.2rem;
+    }
+    &::before {
+      content: '';
+      width: 1.4rem;
+      height: 1.4rem;
+      background-color: $yellow;
+      border-radius: 50%;
+      margin-right: 0.7rem;
+      @include sp {
+      }
+    }
+  }
+  &__picture {
+    height: 35.5rem;
+    @include sp {
+      height: 21.2rem;
+    }
+  }
+}

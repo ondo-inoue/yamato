@@ -1,0 +1,49 @@
+.welfare {
+  &__container {
+    border: 1px solid rgba(15, 15, 15, 0.1);
+    padding: 6.3rem 7.9rem;
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+      display: block;
+      padding: 4.6rem 2.3rem;
+    }
+  }
+  &__left {
+    width: 29.1rem;
+    @include sp {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+  }
+  &__picture {
+    width: 26rem;
+    margin: 0 auto 3rem;
+    @include sp {
+      width: 16rem;
+      margin: 0 auto 1.8rem;
+    }
+  }
+  &__company {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem; /* 100% */
+    letter-spacing: 0.06rem;
+    margin-bottom: 2rem;
+    @include sp {
+      font-size: 1.6rem;
+      line-height: 2rem; /* 125% */
+      letter-spacing: 0.064rem;
+    }
+  }
+  &__right {
+    width: 47.6rem;
+    @include sp {
+      width: 100%;
+    }
+    .basic-p:not(:last-child) {
+      margin-bottom: 2.6rem;
+    }
+  }
+}

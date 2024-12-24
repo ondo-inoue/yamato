@@ -1,0 +1,99 @@
+.course {
+  border: 1px solid rgba(15, 15, 15, 0.1);
+  max-width: 113.6rem;
+  margin: auto;
+  @include sp {
+    border: none;
+  }
+  &__grey {
+    p {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 3rem 0 6rem;
+      font-size: 4rem;
+      font-weight: 500;
+      line-height: 4.6rem; /* 115% */
+      @include sp {
+        font-size: 2.4rem;
+        font-weight: 500;
+        padding: 2.5rem 0 4.8rem;
+      }
+      em {
+        font-family: $Poppins;
+        font-style: normal;
+        font-weight: 500;
+      }
+      span {
+        display: block;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.8rem; /* 233.333% */
+        letter-spacing: 0.012rem;
+        @include sp {
+          font-size: 1rem;
+          line-height: 1.2;
+          letter-spacing: 0.01rem;
+        }
+      }
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5.4rem;
+    padding: 0 7.8rem;
+    margin-top: -3.3rem;
+    position: relative;
+    @include sp {
+      column-gap: 1.9rem;
+      padding: 0 3.2rem;
+      margin-top: -3rem;
+    }
+    &:not(.last) {
+      margin-bottom: 8rem;
+      @include sp {
+        margin-bottom: 4rem;
+      }
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 0.3rem;
+        height: 100%;
+        background-size: contain;
+        background-size: 3px;
+      }
+      &::before {
+        background-image: url(../images/common/dot_pink.png);
+        left: 27.2%;
+      }
+      &::after {
+        right: 27.2%;
+        background-image: url(../images/common/dot_blue.png);
+      }
+    }
+    &.col-1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__arrow {
+    width: 52.1rem;
+    margin: 0 auto 5rem;
+    @include sp {
+      width: 17rem;
+      margin: 0 auto 0.5rem;
+    }
+  }
+  &__yellow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    @include sp {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 31.3rem;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,300 @@
+// -----------------------------------------------
+// hero
+// -----------------------------------------------
+.hero {
+  &__fv {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+      background: linear-gradient(180deg, rgba(15, 15, 15, 0) 50%, #0f0f0f 100%);
+      background-blend-mode: multiply;
+    }
+  }
+  &__picture {
+    height: 62rem;
+    @include sp {
+      height: 45rem;
+    }
+  }
+  &__textArea {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 4.5rem 10rem;
+    z-index: 1;
+    @include sp {
+      padding: 2.6rem 3rem;
+    }
+  }
+  &__label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem; /* 142.857% */
+    letter-spacing: 0.042rem;
+    border-radius: 9.9rem;
+    background: $yellow;
+    display: inline-block;
+    padding: 0.5rem 2.3rem;
+    margin-bottom: 2.2rem;
+    @include sp {
+      font-size: 1rem;
+      padding: 0.2rem 1.6rem;
+      letter-spacing: 0.03rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+  &__title1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 6rem; /* 125% */
+    letter-spacing: 0.192rem;
+    color: white;
+    @include sp {
+      font-size: 2.8rem;
+      line-height: 2rem;
+      letter-spacing: 0.112rem;
+    }
+    span {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 5.2rem; /* 325% */
+      letter-spacing: 0.064rem;
+      display: flex;
+      align-items: center;
+      @include sp {
+        font-size: 1.4rem;
+        line-height: 5.2rem; /* 371.429% */
+        letter-spacing: 0.056rem;
+      }
+      &::after {
+        content: '';
+        width: 2rem;
+        background-color: white;
+        height: 1px;
+        margin-left: 0.8rem;
+      }
+    }
+  }
+  &__intro {
+    padding: 13rem 0 14rem;
+    @include sp {
+      padding: 5rem 0 10rem;
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 4.4rem; /* 275% */
+      letter-spacing: 0.064rem;
+      text-align: center;
+      @include sp {
+        font-size: 1.4rem;
+        line-height: 3.4rem; /* 242.857% */
+        letter-spacing: 0.056rem;
+        text-align: left;
+        max-width: 31.1rem;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------
+// hero-2
+// -----------------------------------------------
+.hero-2 {
+  margin-bottom: 16rem;
+  // margin-bottom: 20rem;
+  @include sp {
+    margin-bottom: 10rem;
+  }
+  &__container {
+    position: relative;
+  }
+  &__title {
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 6rem; /* 125% */
+    letter-spacing: 0.192rem;
+    position: absolute;
+    bottom: 6.5rem;
+    left: 10.5rem;
+    z-index: 1;
+    @include sp {
+      font-size: 2.8rem;
+      line-height: 4rem; /* 142.857% */
+      letter-spacing: 0.112rem;
+      left: 3.2rem;
+      bottom: 4rem;
+    }
+  }
+  &__picture {
+    height: 62rem;
+    @include sp {
+      height: 45rem;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+      background: linear-gradient(180deg, rgba(15, 15, 15, 0) 50%, #0f0f0f 100%);
+      background-blend-mode: multiply;
+    }
+  }
+  &__name {
+    position: absolute;
+    right: 10rem;
+    bottom: 6.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.056rem;
+    z-index: 1;
+    @include sp {
+      font-size: 1.2rem;
+      letter-spacing: 0.048rem;
+      left: 3.9rem;
+      bottom: 3.5rem;
+    }
+    span {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.08rem;
+      display: block;
+      margin-top: 0.3rem;
+      @include sp {
+        font-size: 1.6rem;
+        letter-spacing: 0.064rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  &__copy {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 5.6rem; /* 175% */
+    letter-spacing: 0.128rem;
+    margin-top: 13rem;
+    @include sp {
+      max-width: 31.1rem;
+      margin: auto;
+      font-size: 1.6rem;
+      line-height: 3.2rem; /* 200% */
+      letter-spacing: 0.064rem;
+      margin-top: 5.3rem;
+      text-align: left;
+    }
+
+    &.smaller {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 4.4rem; /* 275% */
+      letter-spacing: 0.064rem;
+      @include sp {
+        font-size: 1.4rem;
+        line-height: 3.4rem; /* 242.857% */
+        letter-spacing: 0.056rem;
+        text-align: left;
+        margin-top: 4.3rem;
+      }
+    }
+    &.second-copy {
+      margin-top: 4rem;
+    }
+  }
+  &__info {
+    width: 23rem;
+    height: 17.1rem;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 9.5rem;
+    padding: 2.3rem;
+    @include sp {
+      position: static;
+      width: 31.3rem;
+      margin: 3.7rem auto 1rem;
+      height: auto;
+      padding: 0;
+    }
+    &-tag {
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.3rem 1.2rem;
+      border-radius: 2.6rem;
+      display: inline-flex;
+      background: $yellow;
+    }
+    &-name {
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: 0.012rem;
+      border-top: 1px solid rgba(15, 15, 15, 0.1);
+      margin-top: 1.5rem;
+      padding-top: 1.7rem;
+      @include sp {
+        border-top: none;
+        border-bottom: 1px solid rgba(15, 15, 15, 0.1);
+        margin-top: 0;
+        padding: 1rem 0 3rem;
+      }
+      span {
+        font-family: $Poppins;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 0.08rem;
+        color: #0f0f0f;
+        display: block;
+        margin-bottom: 0.5rem;
+        @include sp {
+          margin: 0;
+        }
+      }
+    }
+  }
+  &__linkArea {
+    max-width: 124.2rem;
+    margin: 15rem auto 0;
+    display: flex;
+    gap: 3.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include sp {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 31.3rem;
+      gap: 1.5rem;
+      margin: 11.5rem auto 0;
+    }
+    .card {
+      width: 28.6rem;
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+}
+.page-message {
+  @include sp {
+    // .hero-2__copy {
+    //   text-align: left;
+    // }
+    .hero-2__title {
+      bottom: 10rem;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.comics {
+  &__container {
+    padding: 8.5rem 0 20.8rem;
+    @include sp {
+      padding: 3.5rem 0 10.5rem;
+    }
+  }
+  &__copy {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3.6rem; /* 225% */
+    letter-spacing: 0.064rem;
+    margin-bottom: 12.5rem;
+    @include sp {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 3rem; /* 214.286% */
+      letter-spacing: 0.014rem;
+      text-align: left;
+      max-width: 31.1rem;
+      margin: 0 auto 4.5rem;
+    }
+  }
+  &__buttonArea {
+    display: flex;
+    justify-content: center;
+    gap: 3.1rem;
+    @include sp {
+      gap: 1rem;
+      flex-wrap: wrap;
+      .color-reverse {
+        order: 2;
+      }
+    }
+    p {
+      max-width: 22rem;
+    }
+  }
+}

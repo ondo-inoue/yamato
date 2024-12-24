@@ -1,0 +1,250 @@
+$sp: 768px;
+@mixin sp {
+  @media only screen and (max-width: $sp) {
+    @content;
+  }
+}
+
+// 図版
+.basic-figure {
+  @include sp {
+    margin-bottom: 4.8rem !important;
+  }
+}
+
+// FAQアコーディオン
+.faq {
+  &__item {
+    margin-bottom: 2.4rem;
+    padding: 3.2rem 4.8rem 4.8rem 6.4rem;
+    border-radius: 1.2rem;
+    background-color: #FFF;
+    box-shadow: 0px 0px 30px 0px rgba(15, 15, 15, 0.10);
+    border-left: 1.6rem solid #FCCF00;
+    @include sp {
+      padding: 2.4rem 2.4rem 3.2rem;
+      border-left: 0.6rem solid #FCCF00;
+    }
+  }
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 4rem;
+    padding-bottom: 3.2rem;
+    @include sp {
+      margin-bottom: 2.2rem;
+      padding-bottom: 2.4rem;
+    }
+    &-text {
+      font-size: 1.6rem;
+      font-weight: 600;
+      @include sp {
+        max-width: 22.5rem;
+      }
+    }
+  }
+  &__question::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: url(../../assets/images/common/dot.png) repeat-x;
+    background-size: 4px;
+  }
+  &-open {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: url(../../assets/images/career/education/accordion_open.jpg);
+    background-size: 2.8rem;
+    @include sp {
+      width: 2rem;
+      height: 2rem;
+      background-size: 2rem;
+    }
+  }
+
+  &__answer {
+    &-inner {
+      margin-bottom: 3.2rem;
+      @include sp {
+        margin-bottom: 2.2rem;
+      }
+    }
+    &-point {
+      margin-bottom: 1.7rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      @include sp {
+        margin-bottom: 1.2rem;
+      }
+    }
+    &-text {
+      font-size: 1.4rem;
+      line-height: 2.8rem; /* 200% */
+    }
+    &-box {
+      background-color: #FCCF00;
+    }
+    &-boxInner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 86.4rem;
+      margin: 0 2.4rem;
+      padding: 2rem 0;
+      @include sp {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 2rem 2rem;
+      }
+    }
+    &-tag {
+      max-height: 3rem;
+      padding: 1rem 2rem;
+      background-color: #FFF;
+      font-size: 1.3rem;
+      line-height: 1rem;
+      border-radius: 9.9rem;
+      @include sp {
+        display: inline-block;
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+    &-textInner {
+      width: 76.4rem;
+      font-size: 1.4rem;
+      line-height: 2.8rem; /* 200% */
+      @include sp {
+        width: 100%;
+        margin-top: 1rem;
+        line-height: 2.4rem; /* 171.429% */
+      }
+    }
+  }
+}
+
+// basic-gridのunique
+.basic-grid {
+  margin-bottom: 5.6rem;
+  @include sp {
+    display: block;
+    margin-bottom: 2.4rem;
+  }
+}
+.col-2 {
+    column-gap: 5.6rem;
+    article {
+      @include sp {
+        margin-bottom: 2.4rem;
+      }
+    }
+}
+
+/* テキストがないリスト */
+.card-itemList {
+  width: 38.8rem;
+  margin: 0 auto;
+  padding: 2.8rem 0 3.8rem;
+  @include sp {
+    width: 26.3rem;
+    padding: 1rem 0 2rem;
+  }
+  li {
+    margin-bottom: 3rem;
+    @include sp {
+      margin-bottom: 2rem;
+    }
+    .faq__answer-point {
+      margin-bottom: 1rem;
+      @include sp {
+        margin-bottom: 0.7rem;
+      }
+    }
+    .basic-p {
+      padding: 0;
+    }
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* テキストがあるリスト */
+.card-itemInner {
+  width: 92.8rem;
+  margin: 0 auto;
+  padding: 2.8rem 0 3.8rem;
+  @include sp {
+    width: 26.3rem;
+    padding-bottom: 3rem;
+  }
+  .basic-p {
+    padding: 0 0 3.3rem 0;
+    background: url(../../assets/images/common/dot.png) repeat-x left bottom;
+    background-size: 0.6rem;
+  }
+  .card-itemTitle {
+    margin: 4rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    @include sp {
+      margin: 3.3rem 0 2.6rem;
+      text-align: left;
+    }
+  }
+  .card-itemName {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    margin-bottom: 1.7rem;
+    @include sp {
+      display: block;
+      margin-bottom: 2.7rem;
+    }
+    li {
+      margin-bottom: 0.7rem;
+    }
+  }
+  .card-itemNotes {
+    font-size: 1.2rem;
+    opacity: 0.4;
+    text-align: right;
+    @include sp {
+      text-align: left;
+    }
+  }
+}
+
+// ページ内の黄色丸ぽち
+.text-catch {
+  font-size: 1.6rem;
+  font-weight: 600;
+  @include sp {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+}
+.text-catch::before {
+  content: '';
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.7rem;
+  background-color: #FCCF00;
+  border-radius: 50%;
+}
+
+// 画像にマージンなし
+.margin-none {
+  margin-bottom: 0 !important;
+}

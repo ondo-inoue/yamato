@@ -1,0 +1,304 @@
+// -----------------------------------------------
+// mv
+// -----------------------------------------------
+.mv {
+  position: relative;
+  background-color: $yellow;
+  &__copy {
+    position: absolute;
+    width: 38rem;
+    left: 9.9rem;
+    top: 36rem;
+    z-index: 2;
+    animation-name: clip-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    clip-path: inset(0 100% 0 0);
+    @include sp {
+      width: 20.7911rem;
+      top: 29rem;
+      left: 3.2rem;
+    }
+  }
+  @keyframes clip-anim {
+    0%{
+      clip-path: inset(0 100% 0 0);
+    }
+    100%{
+      clip-path: inset(0 0% 0 0);
+    }
+  }
+  &__slider {
+    background-color: #0f0f0f;
+  }
+  &__slider-picture {
+    height: 80rem;
+    @include sp {
+      height: 55.2rem;
+    }
+  }
+  &__slider-pagination {
+    margin: -17rem 0 5.5rem;
+    position: relative;
+    z-index: 2;
+    padding-left: 9rem;
+    @include sp {
+      margin: 0 0 5rem;
+      padding-left: 2.7rem;
+    }
+    .swiper-pagination-bullet {
+      background: white;
+      opacity: 1;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid $yellow;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        @include sp {
+          width: 1.4rem;
+          height: 1.4rem;
+        }
+      }
+    }
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 1.6rem;
+      @include sp {
+        margin: 0 1.2rem;
+        width: 0.6rem;
+        height: 0.6rem;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background: $yellow;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  &__carousel {
+    position: absolute;
+    bottom: -29.4rem;
+    left: 0;
+    width: 100%;
+    @include sp {
+      bottom: -19rem;
+    }
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+  }
+  &__carousel-item {
+    overflow: hidden;
+    border-radius: 2rem;
+    position: relative;
+    p {
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.6rem; /* 162.5% */
+      letter-spacing: 0.08rem;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 2.2rem;
+      @include sp {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 1.8rem; /* 163.636% */
+        letter-spacing: 0.055rem;
+        padding: 1.2rem;
+      }
+    }
+  }
+  &__carousel-size1 {
+    width: 25.8rem;
+    @include sp {
+      width: 16.2rem;
+    }
+  }
+  &__carousel-size2 {
+    width: 45rem;
+    @include sp {
+      width: 28.4rem;
+    }
+  }
+  &__carousel-size3 {
+    width: 34.3rem;
+    @include sp {
+      width: 21.5rem;
+    }
+  }
+  &__scroll {
+    position: absolute;
+    right: 30rem;
+    top: -23rem;
+    right: 4.8rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include sp {
+      top: -3.4rem;
+      right: 2.4rem;
+    }
+    .scroll-text {
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.12rem;
+      color: #FFF;
+      writing-mode: vertical-lr;
+      margin-bottom: 1rem;
+      // transform: rotate(90deg);
+    }
+    .scroll-nav {
+      display: block;
+      width: 1px;
+      height: 8rem;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, .4);
+      @include sp {
+        height: 4.8rem;
+      }
+      &-in{
+        display: block;
+        width: 100%;
+        height: 2rem;
+        background-color: white;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; /* 無限にアニメーションする */
+        animation-name: scNav; /* アニメーション名 */
+        animation-timing-function: ease-in;
+        @include sp {
+          height: 1rem;
+        }
+      }
+      @keyframes scNav {
+        0% {
+          opacity: 0;
+          transform: translateY(-2rem);
+        }
+        5% {
+          opacity: 1;
+        }
+        10% {
+          opacity: 1;
+          transform: translateY(-2rem);
+        }
+        60% {
+          opacity: 1;
+          transform: translateY(10rem);
+        }
+        90% {
+          opacity: 0;
+          transform: translateY(10rem);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(-2rem);
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------
+// intro
+// -----------------------------------------------
+.intro {
+  text-align: center;
+  padding: 53.6rem 0 0rem;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    $yellow 0%,
+    $yellow calc(100% - 100rem),
+    white calc(100% - 50rem),
+    white 100%
+  );
+  @include sp {
+    padding: 32rem 3rem 0rem;
+    text-align: left;
+    background: linear-gradient(
+      180deg,
+      $yellow 0%,
+      $yellow calc(100% - 40rem),
+      white calc(100% - 17.5rem),
+      white 100%
+    );
+  }
+  &__bubble {
+    position: absolute;
+    mix-blend-mode: multiply;
+    top: 2.5rem;
+    left: calc(50% + 26.5rem);
+    width: 58.6196rem;
+    @include sp {
+      width: 17.2rem;
+      left: auto;
+      right: 0;
+      top: 5.5rem;
+    }
+  }
+  &__p {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5.2rem; /* 260% */
+    letter-spacing: 0.08rem;
+    margin-bottom: 6.6rem;
+    @include sp {
+      font-size: 1.5rem;
+      line-height: 3.6rem; /* 240% */
+      letter-spacing: 0.06rem;
+      margin-bottom: 4rem;
+    }
+  }
+  &__title {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 6.4rem; /* 160% */
+    letter-spacing: 0.4rem;
+    margin-top: 8rem;
+    @include sp {
+      font-size: 2.2rem;
+      line-height: 4rem; /* 181.818% */
+      letter-spacing: 0.022rem;
+      text-align: center;
+      margin-top: 6rem;
+    }
+  }
+  &__english {
+    position: relative;
+    height: 104rem;
+    width: 100%;
+    mix-blend-mode: multiply;
+    @include sp {
+      height: 45rem;
+    }
+    picture {
+      width: 183.7rem;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      top: -27.7rem;
+      @include sp {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -47rem;
+        width: 100vw;
+      }
+    }
+  }
+}

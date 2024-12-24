@@ -1,0 +1,88 @@
+// -----------------------------------------------
+// bubbles
+// -----------------------------------------------
+.bubble {
+  position: absolute;
+  z-index: -1;
+
+  &-container {
+    position: relative;
+    overflow: hidden;
+  }
+  &-feature {
+    top: 32rem;
+    left: calc(50% - 3.2rem);
+    svg {
+      width: 88.5rem;
+    }
+    @include sp {
+      display: none;
+    }
+  }
+  &-company {
+    top: 27.5rem;
+    left: calc(50% - 82rem);
+    @include sp {
+      left: 40%;
+      top: auto;
+      bottom: 16rem;
+      transform: rotate(-40deg) scale(1.05);
+    }
+    svg {
+      width: 28rem;
+    }
+  }
+  &-job {
+    bottom: -6.5rem;
+    left: calc(50% + 4rem);
+    @include sp {
+      left: -40%;
+      bottom: -43rem;
+    }
+    svg {
+      width: 88.6rem;
+      @include sp {
+        width: 30rem;
+      }
+    }
+  }
+  &-manga {
+    top: -15.8rem;
+    left: calc(50% - 82rem);
+    @include sp {
+      display: none;
+    }
+    svg {
+      width: 28rem;
+    }
+  }
+  &-career {
+    top: 61rem;
+    left: calc(50% + 0.7rem);
+    @include sp {
+      left: 20%;
+      top: auto;
+      bottom: -10rem;
+    }
+    svg {
+      width: 75rem;
+      @include sp {
+        width: 45rem;
+      }
+    }
+  }
+  &-recruit {
+    bottom: -34.5rem;
+    left: calc(50% - 89.5rem);
+    @include sp {
+      bottom: -27rem;
+      left: calc(50% - 43rem);
+    }
+    svg {
+      width: 93.3rem;
+      @include sp {
+        width: 52rem;
+      }
+    }
+  }
+}

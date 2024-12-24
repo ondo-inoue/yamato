@@ -1,0 +1,24 @@
+$yellow: rgba(252, 207, 0, 1);
+
+$Poppins: 'Poppins', sans-serif;
+$gothic: 'Noto Sans JP', sans-serif;
+
+// responsive breakpoints
+$xl: 1440px;
+$sp: 768px;
+$pc: 769px;
+@mixin xl {
+  @media only screen and (max-width: $xl) {
+    @content;
+  }
+}
+@mixin pc {
+  @media only screen and (min-width: $pc) {
+    @content;
+  }
+}
+@mixin sp {
+  @media only screen and (max-width: $sp) {
+    @content;
+  }
+}

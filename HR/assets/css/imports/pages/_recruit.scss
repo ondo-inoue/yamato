@@ -1,0 +1,178 @@
+.recruit {
+  margin-bottom: 26rem;
+  @include sp {
+    margin-bottom: 16rem;
+  }
+  &__linkArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 124rem;
+    margin: auto;
+    gap: 3.2rem;
+    @include sp {
+      gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 31.1rem;
+    }
+  }
+  &__yellow {
+    text-align: center;
+    width: 70.4rem;
+    height: 25.8rem;
+    margin: 13rem auto 13.8rem;
+    background-color: $yellow;
+    padding-top: 5.7rem;
+    @include sp {
+      width: 31.1rem;
+      height: 25.4rem;
+      margin: 7.5rem auto 8rem;
+      padding-top: 5rem;
+    }
+    &-text1 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2.4rem; /* 120% */
+      letter-spacing: 0.02rem;
+      @include sp {
+        font-size: 1.6rem;
+        letter-spacing: 0.016rem;
+      }
+    }
+    &-text2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5.2rem 0 3rem;
+      @include sp {
+        margin: 3rem 0 1.5rem;
+        display: block;
+      }
+      em {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem; /* 125% */
+        letter-spacing: 0.048rem;
+        @include sp {
+          font-size: 1.2rem;
+          letter-spacing: 0.036rem;
+          display: block;
+          margin-bottom: 1.5rem;
+        }
+      }
+      span {
+        font-family: $Poppins;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 2rem; /* 90.909% */
+        margin: 0 1rem 0 1.5rem;
+        @include sp {
+          margin: 0 1rem 0 0;
+          font-size: 1.8rem;
+          vertical-align: middle;
+        }
+      }
+      a {
+        font-family: $Poppins;
+        font-size: 4.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2rem; /* 41.667% */
+        @include sp {
+          font-size: 3.2rem;
+          vertical-align: middle;
+        }
+      }
+    }
+    &-text3 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 2.8rem; /* 233.333% */
+      letter-spacing: 0.012rem;
+      @include sp {
+        font-size: 1rem;
+        letter-spacing: 0.01rem;
+      }
+    }
+  }
+  // recruit/event/
+  &__eventLink {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem; /* 228.571% */
+    letter-spacing: 0.056rem;
+    margin: 5.5rem 0 3rem;
+    @include sp {
+      line-height: 2.8rem; /* 200% */
+      margin: 4.5rem 0 2rem;
+    }
+    a {
+      text-decoration-line: underline;
+    }
+  }
+  // recruit/faq/
+  &__faq {
+    border: 1px solid rgba(15, 15, 15, 0.1);
+    &-item {
+      padding: 4.5rem 5.5rem;
+      @include sp {
+        padding: 3.8rem 2.2rem;
+      }
+      &:nth-child(even) {
+        background: #fbfbfb;
+      }
+    }
+    &-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      @include sp {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1.2rem;
+      }
+      span {
+        color: $yellow;
+        font-family: $Poppins;
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 4.6rem; /* 143.75% */
+        margin-right: 1.5rem;
+        @include sp {
+          font-size: 2.8rem;
+          line-height: 2.8rem; /* 100% */
+          margin: 0 0 0.5rem 0;
+        }
+      }
+      em {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem; /* 100% */
+        letter-spacing: 0.08rem;
+        @include sp {
+          font-size: 1.6rem;
+          line-height: 2.4rem; /* 150% */
+          letter-spacing: 0.064rem;
+        }
+      }
+    }
+    &-text {
+      font-size: 1.6rem;
+      text-align: justify;
+      font-weight: 400;
+      line-height: 2.8rem; /* 175% */
+      letter-spacing: 0.016rem;
+      @include sp {
+        font-size: 1.4rem;
+        line-height: 2.8rem; /* 200% */
+        letter-spacing: 0.056rem;
+      }
+      a {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.maps {
+  max-width: 92rem;
+  margin: auto;
+  border: 1px solid rgba(15, 15, 15, 0.1);
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.7rem 6.2rem;
+    @include sp {
+      display: block;
+      padding: 1.4rem 2.3rem 3.1rem;
+    }
+    &:nth-child(even) {
+      background: #fbfbfb;
+    }
+  }
+  &__left {
+    width: calc(100% - 35rem);
+    padding: 1rem 0 0 0;
+    @include sp {
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.8rem; /* 140% */
+    letter-spacing: 0.02rem;
+    @include sp {
+      font-size: 1.6rem;
+    }
+  }
+  &__p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem; /* 171.429% */
+    letter-spacing: 0.014rem;
+
+    address {
+      display: block;
+      margin: 2.7rem 0 2.5rem;
+      @include sp {
+        margin: 0.9rem 0 0.5rem;
+      }
+    }
+  }
+  &__right {
+    width: 35rem;
+    @include sp {
+      width: 100%;
+    }
+  }
+  &__picture {
+    height: 31.6rem;
+    border: 1px solid #eee;
+    @include sp {
+      height: 23.78rem;
+      margin-top: 2rem;
+    }
+  }
+  .basic-button {
+    margin-top: 2.5rem;
+    max-width: 23rem;
+    @include sp {
+      max-width: 100%;
+      margin-top: 1.5rem;
+      a {
+        max-width: 100%;
+      }
+    }
+  }
+}
