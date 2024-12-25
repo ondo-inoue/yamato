@@ -1,4 +1,5 @@
 .modal {
+  //----- 社員インタビューのモーダル -----//
   position: fixed;
   top: 0;
   left: 0;
@@ -156,6 +157,53 @@
     max-width: 48.8rem;
     @include sp {
       line-height: 3rem; /* 214.286% */
+    }
+  }
+
+  //----- 写真とテキストのモーダル -----//
+  &__desc-wrapper {
+    width: 59.2rem;
+    background-color: white;
+    @include sp {
+      width: 31.1rem;
+    }
+  }
+  &__desc {
+    width: 59.2rem;
+    @include sp {
+      width: 31.1rem;
+    }
+    &-title {
+      padding: 2rem 0;
+      margin-bottom: 6.4rem;
+      background-color: #FCCF00;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 0.08rem;
+      @include sp {
+        padding: 1.2rem 0;
+        margin-bottom: 4rem;
+        font-size: 1.6rem;
+      }
+    }
+    &-inner {
+      width: 43.2rem;
+      margin: 0 auto;
+      @include sp {
+        width: 25.5rem;
+      }
+    }
+    &-text {
+      margin-top: 3rem;
+      padding-bottom: 5.4rem;
+      font-size: 1.4rem;
+      line-height: 3.2rem; /* 228.571% */
+      @include sp {
+        margin-top: 2.2rem;
+        padding-bottom: 4.2rem;
+        line-height: 3rem; /* 214.286% */
+      }
     }
   }
 }
