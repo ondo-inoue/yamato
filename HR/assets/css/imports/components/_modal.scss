@@ -205,6 +205,72 @@
         line-height: 3rem; /* 214.286% */
       }
     }
+
+    //----- 技術職POINTのモーダル -----//
+    &-pointTitle {
+      display: flex;
+      border-bottom: 1px solid #E7E7E7;
+      @include sp {
+        display: block;
+      }
+    }
+    &-pointIllust {
+      width: 10rem;
+      margin-right: 3.2rem;
+      @include sp {
+        width: 10rem;
+        margin: 0 auto 2.4rem;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    &-pointWrap {
+      padding-bottom: 3.4rem;
+      @include sp {
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+    }
+    &-pointTag {
+      display: inline-block;
+      margin-bottom: 1.2rem;
+      padding: 0.6rem 1.6rem;
+      border-radius: 999rem;
+      background-color: #FCCF00;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.048rem;
+      @include sp {
+        margin: 0 auto 1.3rem;
+        font-size: 1rem;
+      }
+    }
+    &-pointCopy {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 3.2rem; /* 160% */
+      letter-spacing: 0.02rem;
+      @include sp {
+        font-size: 1.6rem;
+        line-height: 2.8rem; /* 175% */
+        text-align: justify;
+      }
+    }
+    &-pointText {
+      margin: 4.1rem 0 5.7rem;
+      font-size: 1.4rem;
+      line-height: 3.2rem; /* 228.571% */
+      @include sp {
+        margin: 3.2rem 0 0;
+        padding-bottom: 4rem;
+        font-size: 1.4rem;
+        line-height: 3rem; /* 214.286% */
+      }
+    }
   }
 }
 .modal-is-open {

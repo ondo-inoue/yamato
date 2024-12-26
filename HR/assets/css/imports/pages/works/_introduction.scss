@@ -431,6 +431,70 @@
       line-height: 2.2rem; /* 169.231% */
     }
   }
+
+  // モーダルボタン
+  &__tech-modalBtn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 37.6rem;
+    padding: 1rem;
+    margin: 4.9rem auto 0;
+    background-color: #FCCF00;
+    border-radius: 9.9rem;
+    cursor: pointer;
+    @include sp {
+      width: 100%;
+      margin-top: 2.5rem;
+    }
+    figure {
+      width: 6rem;
+      margin-right: 1.6rem;
+      @include sp {
+        width: 4.8rem;
+        margin-right: 0.6rem;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+    p {
+      max-width: 21rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.2rem; /* 137.5% */
+      letter-spacing: 0.016rem;
+      text-align: start;
+      @include sp {
+        width: 10.8rem;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        line-height: 1.6rem; /* 133.333% */
+      }
+    }
+    .modal-open {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+      width: 2.8rem;
+      height: 2.8rem;
+      background-image: url(../../assets/images/works/introduction/modal_open.png);
+      background-size: 2.8rem;
+      @include sp {
+        width: 2rem;
+        height: 2rem;
+        background-size: 2rem;
+        right: 0.5rem;
+      }
+    }
+  }
 }
 
 // 共通パーツ
