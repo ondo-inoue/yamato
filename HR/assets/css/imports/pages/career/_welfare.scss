@@ -47,3 +47,100 @@
     }
   }
 }
+
+
+//----- アンカーリンク（1カラムにする）-----//
+.linkArea-col1 {
+  @include sp {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+
+//----- 数字で見る働く環境 -----//
+.basic-grid.col-3 {
+  @include sp {
+    gap: 1.5rem;
+  }
+}
+
+
+//----- 利用者の声 -----//
+.user-title__sub {
+  margin: 8.5rem 0 5.6rem 0;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+  @include sp {
+    margin: 11rem 0 4rem 0;
+    font-size: 2rem;
+  }
+}
+
+.user-comment {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 5.6rem;
+  font-size: 1.4rem;
+  line-height: 2.8rem; /* 200% */
+  @include sp {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.user-icon {
+  width: 8rem;
+  margin-right: 2.8rem;
+  @include sp {
+    width: 4.8rem;
+    margin-right: 0.8rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.user-text {
+  width: 70.4rem;
+  padding: 4rem 4rem 2.8rem;
+  background-color: #F5F5F5;
+  border-radius: 1.2rem 1.2rem 1.2rem 0rem;
+  letter-spacing: 0.014rem;
+  @include sp {
+    width: 25.5rem;
+    padding: 2.4rem 2.2rem;
+    line-height: 2.4rem; /* 171.429% */
+  }
+
+  span {
+    display: block;
+    padding-top: 1.2rem;
+    opacity: 0.4;
+    @include sp {
+      padding-top: 0.8rem;
+    }
+  }
+}
+
+// 利用者の声アイコンが右側の場合
+.icon-right {
+  margin: 0 0 0 2.8rem;
+  @include sp {
+    margin: 0 0 0 0.8rem;
+  }
+}
+.text-right {
+  border-radius: 1.2rem 1.2rem 0rem 1.2rem;
+}
+
+// 詳しく見るボタン
+.button-center {
+  text-align: center;
+  @include sp {
+    margin-top: 4.8rem;
+  }
+}

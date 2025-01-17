@@ -576,7 +576,7 @@
   border: 1px solid rgba(15, 15, 15, 0.1);
 
   .basic-title2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .basic-p {
@@ -843,6 +843,107 @@
 
     span {
       font-family: $Poppins;
+    }
+  }
+}
+
+// -----------------------------------------------
+// card-12
+// -----------------------------------------------
+.card-12 {
+  position: relative;
+  border: 1px solid rgba(15, 15, 15, 0.1);
+
+  .basic-title2 {
+    font-size: 1.6rem;
+    @include sp {
+      font-size: 1.3rem;
+      line-height: 1.6rem; /* 123.077% */
+    }
+  }
+
+  .details-box {
+    padding: 3rem 0 5.6rem 0;
+    color: $yellow;
+    font-size: 8rem;
+    font-family: $Poppins;
+    font-weight: 500;
+    @include sp {
+      padding: 0 0 1.6rem 0;
+    }
+  }
+
+  .details-text {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 6.4rem; /* 80% */
+    @include sp {
+      font-size: 5.6rem;
+    }
+
+    em,span {
+      color: #0F2A21;
+      font-size: 1.8rem;
+      font-weight: 600;
+      font-family: $gothic;
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+
+    em {
+      margin-right: 0.8rem;
+      line-height: 2.2rem; /* 137.5% */
+      display: flex;
+      align-items: center;
+      @include sp {
+        margin-right: 0.5rem;
+        line-height: 1.7rem;
+      }
+    }
+
+    .sp-other-posi {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    span {
+      margin-left: 0.3rem;
+      line-height: 2.8rem; /* 75% */
+      align-self: flex-end;
+      @include sp {
+        margin-left: 0.5rem;
+        padding-bottom: 1.3rem;
+        line-height: 1.5rem; /* 107.143% */
+      }
+    }
+  }
+
+  .details-catch {
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    @include sp {
+      width: 100%;
+      font-size: 1.2rem;
+    }
+  }
+
+  .details-note {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    opacity: 0.4;
+    @include sp {
+      left: 0.5rem;
+      bottom: 0.5rem;
     }
   }
 }
