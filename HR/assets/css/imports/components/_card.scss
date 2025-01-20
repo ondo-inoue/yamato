@@ -947,3 +947,93 @@
     }
   }
 }
+
+// -----------------------------------------------
+// card-13
+// -----------------------------------------------
+.card-13 {
+  margin-top: 1rem;
+  overflow: visible;
+  @include sp {
+    margin-top: 0;
+  }
+
+  .anchor-link::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../images/common/icon_arrow_down.png);
+    background-size: contain;
+    @include sp {
+      bottom: 1.6rem;
+      left: 11.7rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: translate(0, 0);
+      background-size: 1.5rem;
+    }
+  }
+
+  .card-13__textArea {
+    text-align: center;
+  }
+
+  .staff {
+    &-icon {
+      width: 12rem;
+      height: auto;
+      margin: -6rem auto 0;
+      @include sp {
+        width: 8rem;
+        margin-top: -4rem;
+      }
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-name {
+      margin-top: 0.8rem;
+      font-size: 2rem;
+      @include sp {
+        margin-top: 0.5rem;
+        font-size: 1.6rem;
+      }
+    }
+
+    &-tag {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.1rem 1.4rem 0.2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      background-color: $yellow;
+      border-radius: 2.6rem;
+      @include sp {
+        padding: 0.2rem 1rem 0.3rem;
+        font-size: 1rem;
+      }
+    }
+
+    &-text {
+      margin-top: 0.5rem;
+      padding-bottom: 3.1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      @include sp {
+        margin: 0.8rem 0 0 1.6rem;
+        padding-bottom: 1.6rem;
+        font-size: 1.2rem;
+        text-align: justify;
+      }
+    }
+  }
+}
