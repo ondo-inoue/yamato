@@ -1,480 +1,516 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns#">
+ <head>
+  <!-- Google Tag Manager -->
+  <script>
+   (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0],
+     j = d.createElement(s),
+     dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+   })(window, document, 'script', 'dataLayer', 'GTM-NNVPHDS');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>エキスパートが語る技術の最前線｜ヤマトシステム開発株式会社</title>
+  <meta property="og:title" content="エキスパートが語る技術の最前線｜ヤマトシステム開発株式会社" />
+  <meta name="description" content="システム開発に関する技術の最前線について、社員が現場の経験を元に解説します。" />
+  <meta property="og:description" content="システム開発に関する技術の最前線について、社員が現場の経験を元に解説します。" />
+  <meta name="keywords" content="ヤマト,YAMATO,ヤマトシステム,ヤマトシステム開発,YSD,新卒採用,採用,エントリー" />
+  <meta property="og:type" content="site" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="ヤマトシステム開発株式会社" />
+  <link rel="shortcut icon" href="/HR/assets/images/common/favicon.ico" />
 
-<head>
- 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NNVPHDS');
-</script>
-<!-- End Google Tag Manager -->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>エキスパートが語る技術の最前線｜ヤマトシステム開発株式会社</title>
-<meta property="og:title" content="エキスパートが語る技術の最前線｜ヤマトシステム開発株式会社">
-<meta name="description" content="システム開発に関する技術の最前線について、社員が現場の経験を元に解説します。">
-<meta property="og:description" content="システム開発に関する技術の最前線について、社員が現場の経験を元に解説します。">
-<meta name="keywords" content="ヤマト,YAMATO,ヤマトシステム,ヤマトシステム開発,YSD,新卒採用,採用,エントリー">
-<meta property="og:type" content="site">
-<meta property="og:url" content="">
-<meta property="og:site_name" content="ヤマトシステム開発株式会社">
-<link rel="shortcut icon" href="/HR/assets/images/common/favicon.ico">
+  <!-- ↓↓↓ font ↓↓↓ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- ↑↑↑ font ↑↑↑ -->
 
-<!-- ↓↓↓ font ↓↓↓ -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
- href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@400;500&display=swap"
- rel="stylesheet">
-<!-- ↑↑↑ font ↑↑↑ -->
+  <!-- ↓↓↓ css ↓↓↓ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="/HR/assets/css/style.css" rel="stylesheet" />
+  <!-- ↑↑↑ css ↑↑↑ -->
+ </head>
 
-<!-- ↓↓↓ css ↓↓↓ -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link href="/HR/assets/css/style.css" rel="stylesheet">
-<!-- ↑↑↑ css ↑↑↑ --></head>
+ <body class="page-talk">
+  <!-- ↓↓↓ yellow frame ↓↓↓ -->
+  <div class="frame"></div>
+  <!-- ↑↑↑ yellow frame ↑↑↑ -->
 
-<body class="page-talk">
-
- <!-- ↓↓↓ yellow frame ↓↓↓ -->
-<div class="frame"></div>
-<!-- ↑↑↑ yellow frame ↑↑↑ -->
-
-<!-- ↓↓↓ menu ↓↓↓ -->
-<button class="menu__button"><span>MENU</span></button>
-<aside class="menu">
- <div class="menu__inner">
-  <div class="menu__container">
-   <div class="menu__grid">
-    <div class="menu__column">
-     <h2 class="menu__title">未来の動かし方</h2>
-     <ul class="menu__list">
-      <li><a href="/HR/future/business/">私たちが動かす未来<span>事業について</span></a></li>
-      <li><a href="/HR/future/feature/">未来を動かせる理由<span>特徴・強みについて</span></a></li>
-      <li><a href="/HR/future/initiative/">動き始めた未来<span>最新の取り組み</span></a></li>
-      <li><a href="/HR/future/talk/">未来を動かす人<span>社員が語る未来</span></a></li>
-     </ul>
-    </div>
-    <div class="menu__column">
-     <h2 class="menu__title">企業について</h2>
-     <ul class="menu__list">
-      <li><a href="/HR/company/location/">会社概要／開発拠点</a></li>
-      <li><a href="/HR/company/message/">トップメッセージ</a></li>
-      <li><a href="/HR/company/development/">数字で見る<br />ヤマトシステム開発</a></li>
-     </ul>
-    </div>
-    <div class="menu__column">
-     <h2 class="menu__title">職種と仕事</h2>
-     <ul class="menu__list">
-      <li><a href="/HR/works/introduction/">職種紹介</a></li>
-      <li><a href="/HR/works/interview/">社員インタビュートップ</a></li>
-      <!-- <li><a href="">先輩社員の1週間</a></li> -->
-      <!-- <li><a href="">若手社員コンテンツ</a></li> -->
-     </ul>
-    </div>
-    <div class="menu__column">
-     <h2 class="menu__title">テーマトーク</h2>
-     <ul class="menu__list">
-      <li><a href="/HR/talk/iida/">エキスパートが語る<br />技術の最前線</a></li>
-     </ul>
-     <h2 class="menu__title one-link"><a href="/HR/comics/">マンガでわかる！<br />IT業界の目指し方</a></h2>
-    </div>
-    <div class="menu__column">
-     <h2 class="menu__title">キャリアと働く環境</h2>
-     <ul class="menu__list">
-      <li><a href="/HR/career/course/">選べるキャリアコース</a></li>
-      <li><a href="/HR/career/education/">教育体系・研修制度</a></li>
-      <li><a href="/HR/career/welfare/">福利厚生・健康経営</a></li>
-      <li><a href="/HR/career/reform/">働き方改革</a></li>
-     </ul>
-    </div>
-    <div class="menu__column">
-     <h2 class="menu__title">採用情報</h2>
-     <ul class="menu__list">
-      <li><a href="/HR/recruit/">募集要項</a></li>
-      <li><a href="/HR/recruit/schedule/">採用スケジュール</a></li>
-      <li><a href="/HR/recruit/event/">採用イベント情報</a></li>
-      <li><a href="/HR/recruit/faq/">採用FAQ</a></li>
-     </ul>
+  <!-- ↓↓↓ menu ↓↓↓ -->
+  <button class="menu__button"><span>MENU</span></button>
+  <aside class="menu">
+   <div class="menu__inner">
+    <div class="menu__container">
+     <div class="menu__grid">
+      <div class="menu__column">
+       <h2 class="menu__title">未来の動かし方</h2>
+       <ul class="menu__list">
+        <li>
+         <a href="/HR/future/business/">私たちが動かす未来<span>事業について</span></a>
+        </li>
+        <li>
+         <a href="/HR/future/feature/">未来を動かせる理由<span>特徴・強みについて</span></a>
+        </li>
+        <li>
+         <a href="/HR/future/initiative/">動き始めた未来<span>最新の取り組み</span></a>
+        </li>
+        <li>
+         <a href="/HR/future/talk/">未来を動かす人<span>社員が語る未来</span></a>
+        </li>
+       </ul>
+      </div>
+      <div class="menu__column">
+       <h2 class="menu__title">企業について</h2>
+       <ul class="menu__list">
+        <li><a href="/HR/company/location/">会社概要／開発拠点</a></li>
+        <li><a href="/HR/company/message/">トップメッセージ</a></li>
+        <li>
+         <a href="/HR/company/development/">数字で見る<br />ヤマトシステム開発</a>
+        </li>
+       </ul>
+      </div>
+      <div class="menu__column">
+       <h2 class="menu__title">職種と仕事</h2>
+       <ul class="menu__list">
+        <li><a href="/HR/works/introduction/">職種紹介</a></li>
+        <li><a href="/HR/works/interview/">社員インタビュートップ</a></li>
+        <li><a href="/HR/works/1week/">先輩社員の1週間</a></li>
+        <li><a href="/HR/works/young-faq/">若手が答えるQ&A</a></li>
+       </ul>
+      </div>
+      <div class="menu__column">
+       <h2 class="menu__title">テーマトーク</h2>
+       <ul class="menu__list">
+        <li>
+         <a href="/HR/talk/iida/">エキスパートが語る<br />技術の最前線</a>
+        </li>
+       </ul>
+       <h2 class="menu__title one-link">
+        <a href="/HR/comics/">マンガでわかる！<br />IT業界の目指し方</a>
+       </h2>
+      </div>
+      <div class="menu__column">
+       <h2 class="menu__title">キャリアと働く環境</h2>
+       <ul class="menu__list">
+        <li><a href="/HR/career/course/">選べるキャリアコース</a></li>
+        <li><a href="/HR/career/education/">教育体系・研修制度</a></li>
+        <li><a href="/HR/career/welfare/">福利厚生・健康経営</a></li>
+        <li><a href="/HR/career/reform/">働き方改革</a></li>
+       </ul>
+      </div>
+      <div class="menu__column">
+       <h2 class="menu__title">採用情報</h2>
+       <ul class="menu__list">
+        <li><a href="/HR/recruit/">募集要項</a></li>
+        <li><a href="/HR/recruit/schedule/">採用スケジュール</a></li>
+        <li><a href="/HR/recruit/event/">採用イベント情報</a></li>
+        <li><a href="/HR/recruit/faq/">採用FAQ</a></li>
+       </ul>
+      </div>
+     </div>
+     <div class="menu_entry">
+      <!-- ↓↓↓ entry ↓↓↓ -->
+      <div class="entry">
+       <div class="entry__left">
+        <p><span>ENTRY</span>ご応募はこちら</p>
+       </div>
+       <div class="entry__right">
+        <p class="basic-button slim white">
+         <a target="_blank" href="https://mypage.3050.i-webs.jp/nekonet2025/">2025年卒の方<i></i></a>
+        </p>
+        <p class="basic-button slim white">
+         <a target="_blank" href="https://mypage.3030.i-webs.jp/nekonet2026/">2026年卒の方<i></i></a>
+        </p>
+       </div>
+      </div>
+      <!-- ↑↑↑ entry ↑↑↑ -->
+     </div>
     </div>
    </div>
-   <div class="menu_entry">
-        <!-- ↓↓↓ entry ↓↓↓ -->
-    <div class="entry">
-     <div class="entry__left">
-      <p><span>ENTRY</span>ご応募はこちら</p>
-     </div>
-     <div class="entry__right">
-      <p class="basic-button slim white"><a target="_blank"
-        href="https://mypage.3050.i-webs.jp/nekonet2025/">2025年卒の方<i></i></a></p>
-      <p class="basic-button slim white"><a target="_blank"
-        href="https://mypage.3030.i-webs.jp/nekonet2026/">2026年卒の方<i></i></a></p>
-     </div>
-    </div>
-    <!-- ↑↑↑ entry ↑↑↑ -->   </div>
-  </div>
- </div>
-</aside>
-<!-- ↑↑↑ menu ↑↑↑ --> <!-- ↓↓↓ header ↓↓↓ -->
-<header class="header">
- <a href="/HR/">
-  <img src="/HR/assets/images/common/logo_yamato.svg" alt="ヤマトシステム開発" class="header__logo"
-   width="251" height="44">
- </a>
- <nav class="header__nav">
-  <ul class="header__nav-list">
-   <li class="header__nav-listItem js-mega-hover"><span>未来の動かし方</span>
-    <ul class="header__nav-subList subList-1 js-mega-menu">
-     <li class="header__nav-subListItem">
+  </aside>
+  <!-- ↑↑↑ menu ↑↑↑ -->
+  <!-- ↓↓↓ header ↓↓↓ -->
+  <header class="header">
+   <a href="/HR/">
+    <img src="/HR/assets/images/common/logo_yamato.svg" alt="ヤマトシステム開発" class="header__logo" width="251" height="44" />
+   </a>
+   <nav class="header__nav">
+    <ul class="header__nav-list">
+     <li class="header__nav-listItem js-mega-hover">
+      <span>未来の動かし方</span>
+      <ul class="header__nav-subList subList-1 js-mega-menu">
+       <li class="header__nav-subListItem">
         <a href="/HR/future/business/">
-          <p>私たちが動かす未来<span>事業について</span></p>
-          <img src="/HR/assets/images/common/header_img01_01.jpg" alt="事業について" width="320" height="200">
+         <p>私たちが動かす未来<span>事業について</span></p>
+         <img src="/HR/assets/images/common/header_img01_01.jpg" alt="事業について" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/future/feature/">
-          <p>未来を動かせる理由<span>特徴・強みについて</span></p>
-          <img src="/HR/assets/images/common/header_img01_02.jpg" alt="特徴・強みについて" width="320" height="200">
+         <p>未来を動かせる理由<span>特徴・強みについて</span></p>
+         <img src="/HR/assets/images/common/header_img01_02.jpg" alt="特徴・強みについて" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/future/initiative/">
-          <p>動き始めた未来<span>最新の取り組み</span></p>
-          <img src="/HR/assets/images/common/header_img01_03.jpg" alt="最新の取り組み" width="320" height="200">
+         <p>動き始めた未来<span>最新の取り組み</span></p>
+         <img src="/HR/assets/images/common/header_img01_03.jpg" alt="最新の取り組み" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/future/talk/">
-          <p>未来を動かす人<span>社員が語る未来</span></p>
-          <img src="/HR/assets/images/common/header_img01_04.jpg" alt="社員が語る未来" width="320" height="200">
+         <p>未来を動かす人<span>社員が語る未来</span></p>
+         <img src="/HR/assets/images/common/header_img01_04.jpg" alt="社員が語る未来" width="320" height="200" />
         </a>
-      </li>
-    </ul>
-   </li>
-   <li class="header__nav-listItem js-mega-hover"><span>企業について</span>
-    <ul class="header__nav-subList subList-2 js-mega-menu">
-      <li class="header__nav-subListItem">
+       </li>
+      </ul>
+     </li>
+     <li class="header__nav-listItem js-mega-hover">
+      <span>企業について</span>
+      <ul class="header__nav-subList subList-2 js-mega-menu">
+       <li class="header__nav-subListItem">
         <a href="/HR/company/location/">
-          <p>会社概要/開発拠点</p>
-          <img src="/HR/assets/images/common/header_img02_01.jpg" alt="会社概要/開発拠点" width="320" height="200">
+         <p>会社概要/開発拠点</p>
+         <img src="/HR/assets/images/common/header_img02_01.jpg" alt="会社概要/開発拠点" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/company/message/">
-          <p>トップメッセージ</p>
-          <img src="/HR/assets/images/common/header_img02_02.jpg" alt="トップメッセージ" width="320" height="200">
+         <p>トップメッセージ</p>
+         <img src="/HR/assets/images/common/header_img02_02.jpg" alt="トップメッセージ" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/company/development/">
-          <p>数字で見る<br />ヤマトシステム開発</p>
-          <img src="/HR/assets/images/common/header_img02_03.jpg" alt="数字で見るヤマトシステム開発" width="320" height="200">
+         <p>数字で見る<br />ヤマトシステム開発</p>
+         <img src="/HR/assets/images/common/header_img02_03.jpg" alt="数字で見るヤマトシステム開発" width="320" height="200" />
         </a>
-      </li>
-    </ul>
-   </li>
-   <li class="header__nav-listItem js-mega-hover"><span>職種と仕事</span>
-    <ul class="header__nav-subList subList-3 js-mega-menu">
-      <li class="header__nav-subListItem">
+       </li>
+      </ul>
+     </li>
+     <li class="header__nav-listItem js-mega-hover">
+      <span>職種と仕事</span>
+      <ul class="header__nav-subList subList-3 js-mega-menu">
+       <li class="header__nav-subListItem">
         <a href="/HR/works/introduction/">
-          <p>職種紹介</p>
-          <img src="/HR/assets/images/common/header_img03_01.jpg" alt="職種紹介" width="320" height="200">
+         <p>職種紹介</p>
+         <img src="/HR/assets/images/common/header_img03_01.jpg" alt="職種紹介" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/works/interview/">
-          <p>社員インタビュー</p>
-          <img src="/HR/assets/images/common/header_img03_02.jpg" alt="社員インタビュー" width="320" height="200">
+         <p>社員インタビュー</p>
+         <img src="/HR/assets/images/common/header_img03_02.jpg" alt="社員インタビュー" width="320" height="200" />
         </a>
-      </li>
-    </ul>
-   </li>
-   <li class="header__nav-listItem js-mega-hover"><a href="/HR/talk/iida/">テーマトーク</a></li>
-   <li class="header__nav-listItem js-mega-hover"><a
-     href="/HR/comics/">マンガでわかる！<br />IT業界の目指し方</a></li>
-   <li class="header__nav-listItem js-mega-hover"><span>キャリアと働く環境</span>
-    <ul class="header__nav-subList subList-4 js-mega-menu">
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
+        <a href="/HR/works/1week/">
+         <p>先輩社員の1週間</p>
+         <img src="/HR/assets/images/common/header_img03_03.jpg" alt="先輩社員の1週間" width="320" height="200" />
+        </a>
+       </li>
+       <li class="header__nav-subListItem">
+        <a href="/HR/works/young-faq/">
+         <p>若手が答えるQ&A</p>
+         <img src="/HR/assets/images/common/header_img03_04.jpg" alt="若手が答えるQ&A" width="320" height="200" />
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="header__nav-listItem js-mega-hover"><a href="/HR/talk/iida/">テーマトーク</a></li>
+     <li class="header__nav-listItem js-mega-hover">
+      <a href="/HR/comics/">マンガでわかる！<br />IT業界の目指し方</a>
+     </li>
+     <li class="header__nav-listItem js-mega-hover">
+      <span>キャリアと働く環境</span>
+      <ul class="header__nav-subList subList-4 js-mega-menu">
+       <li class="header__nav-subListItem">
         <a href="/HR/career/course/">
-          <p>選べるキャリアコース</p>
-          <img src="/HR/assets/images/common/header_img04_01.jpg" alt="選べるキャリアコース" width="320" height="200">
+         <p>選べるキャリアコース</p>
+         <img src="/HR/assets/images/common/header_img04_01.jpg" alt="選べるキャリアコース" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/career/education/">
-          <p>教育体系・研修制度</p>
-          <img src="/HR/assets/images/common/header_img04_02.jpg" alt="特徴・強みについて" width="320" height="200">
+         <p>教育体系・研修制度</p>
+         <img src="/HR/assets/images/common/header_img04_02.jpg" alt="特徴・強みについて" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/career/welfare/">
-          <p>福利厚生・健康経営</p>
-          <img src="/HR/assets/images/common/header_img04_03.jpg" alt="福利厚生・健康経営" width="320" height="200">
+         <p>福利厚生・健康経営</p>
+         <img src="/HR/assets/images/common/header_img04_03.jpg" alt="福利厚生・健康経営" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/career/reform/">
-          <p>働き方改革</p>
-          <img src="/HR/assets/images/common/header_img04_04.jpg" alt="働き方改革" width="320" height="200">
+         <p>働き方改革</p>
+         <img src="/HR/assets/images/common/header_img04_04.jpg" alt="働き方改革" width="320" height="200" />
         </a>
-      </li>
-    </ul>
-   </li>
-   <li class="header__nav-listItem js-mega-hover"><span>採用情報</span>
-    <ul class="header__nav-subList subList-5 js-mega-menu">
-    <li class="header__nav-subListItem">
+       </li>
+      </ul>
+     </li>
+     <li class="header__nav-listItem js-mega-hover">
+      <span>採用情報</span>
+      <ul class="header__nav-subList subList-5 js-mega-menu">
+       <li class="header__nav-subListItem">
         <a href="/HR/recruit/">
-          <p>募集要項</p>
-          <img src="/HR/assets/images/common/header_img05_01.jpg" alt="募集要項" width="320" height="200">
+         <p>募集要項</p>
+         <img src="/HR/assets/images/common/header_img05_01.jpg" alt="募集要項" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/recruit/schedule/">
-          <p>採用スケジュール</p>
-          <img src="/HR/assets/images/common/header_img05_02.jpg" alt="採用スケジュール" width="320" height="200">
+         <p>採用スケジュール</p>
+         <img src="/HR/assets/images/common/header_img05_02.jpg" alt="採用スケジュール" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/recruit/event/">
-          <p>採用イベント情報</p>
-          <img src="/HR/assets/images/common/header_img05_03.jpg" alt="採用イベント情報" width="320" height="200">
+         <p>採用イベント情報</p>
+         <img src="/HR/assets/images/common/header_img05_03.jpg" alt="採用イベント情報" width="320" height="200" />
         </a>
-      </li>
-      <li class="header__nav-subListItem">
+       </li>
+       <li class="header__nav-subListItem">
         <a href="/HR/recruit/faq/">
-          <p>採用FAQ</p>
-          <img src="/HR/assets/images/common/header_img05_04.jpg" alt="採用FAQ" width="320" height="200">
+         <p>採用FAQ</p>
+         <img src="/HR/assets/images/common/header_img05_04.jpg" alt="採用FAQ" width="320" height="200" />
         </a>
-      </li>
+       </li>
+      </ul>
+     </li>
     </ul>
-   </li>
-  </ul>
- </nav>
-</header>
-<!-- ↑↑↑ header ↑↑↑ -->   <!-- ↓↓↓ fixed button ↓↓↓ -->
+   </nav>
+  </header>
+  <!-- ↑↑↑ header ↑↑↑ -->
+  <!-- ↓↓↓ fixed button ↓↓↓ -->
   <div class="fixed-button">
-       <!-- ↓↓↓ entry ↓↓↓ -->
-    <div class="entry">
-     <div class="entry__left">
-      <p><span>ENTRY</span>ご応募はこちら</p>
-     </div>
-     <div class="entry__right">
-      <p class="basic-button slim white"><a target="_blank"
-        href="https://mypage.3050.i-webs.jp/nekonet2025/">2025年卒の方<i></i></a></p>
-      <p class="basic-button slim white"><a target="_blank"
-        href="https://mypage.3030.i-webs.jp/nekonet2026/">2026年卒の方<i></i></a></p>
-     </div>
+   <!-- ↓↓↓ entry ↓↓↓ -->
+   <div class="entry">
+    <div class="entry__left">
+     <p><span>ENTRY</span>ご応募はこちら</p>
     </div>
-    <!-- ↑↑↑ entry ↑↑↑ -->  </div>
-  <!-- ↑↑↑ fixed button ↑↑↑ -->
- <!-- ↓↓↓ main ↓↓↓ -->
- <main class="main">
-
-  <!-- ↓↓↓ hero-2 ↓↓↓ -->
-  <section class="hero-2">
-   <div class="hero-2__container">
-    <h1 class="hero-2__title">エキスパートが語る<br class="sp" />技術の最前線</h1>
-    <picture class="hero-2__picture cover">
-     <source srcset="../../assets/images/talk/iida/hero_img01_sp.jpg" media="(max-width: 767px)">
-     <img src="../../assets/images/talk/iida/hero_img01.jpg" alt="Y.I." width="2880" height="1240">
-    </picture>
+    <div class="entry__right">
+     <p class="basic-button slim white">
+      <a target="_blank" href="https://mypage.3050.i-webs.jp/nekonet2025/">2025年卒の方<i></i></a>
+     </p>
+     <p class="basic-button slim white">
+      <a target="_blank" href="https://mypage.3030.i-webs.jp/nekonet2026/">2026年卒の方<i></i></a>
+     </p>
+    </div>
    </div>
-   <p class="hero-2__copy">AIとヤマトグループの運輸ネットワークが結びつけば、<br class="pc" />空想の世界だった物流システムが実現する。</p>
-  </section>
-  <!-- ↑↑↑ hero-2 ↑↑↑ -->
+   <!-- ↑↑↑ entry ↑↑↑ -->
+  </div>
+  <!-- ↑↑↑ fixed button ↑↑↑ -->
+  <!-- ↓↓↓ main ↓↓↓ -->
+  <main class="main">
+   <!-- ↓↓↓ hero-2 ↓↓↓ -->
+   <section class="hero-2">
+    <div class="hero-2__container">
+     <h1 class="hero-2__title">エキスパートが語る<br class="sp" />技術の最前線</h1>
+     <picture class="hero-2__picture cover">
+      <source srcset="../../assets/images/talk/iida/hero_img01_sp.jpg" media="(max-width: 767px)" />
+      <img src="../../assets/images/talk/iida/hero_img01.jpg" alt="Y.I." width="2880" height="1240" />
+     </picture>
+    </div>
+    <p class="hero-2__copy">AIとヤマトグループの運輸ネットワークが結びつけば、<br class="pc" />空想の世界だった物流システムが実現する。</p>
+   </section>
+   <!-- ↑↑↑ hero-2 ↑↑↑ -->
 
-  <!-- ↓↓↓ interview ↓↓↓ -->
-  <section class="interview">
-
-   <div class="interview__container">
-    <div class="interview__profile">
+   <!-- ↓↓↓ interview ↓↓↓ -->
+   <section class="interview">
+    <div class="interview__container">
+     <div class="interview__profile">
       <picture class="interview__profile-pic">
-       <img src="../../assets/images/talk/iida/profile_img01.jpg" alt="Y.I." width="320" height="320">
+       <img src="../../assets/images/talk/iida/profile_img01.jpg" alt="Y.I." width="320" height="320" />
       </picture>
       <div class="interview__profile-textArea">
        <p class="interview__profile-name"><em>Y.I.</em><span>経営学部卒／2007年入社</span></p>
        <p class="interview__profile-text">システム開発におけるトレンドは時代とともにめまぐるしく変化する。IT革命と呼ばれたインターネットの普及がネットワークを基盤としたシステム開発を促進したように、新技術の登場はシステム開発の新たな可能性を開く。これからのシステム開発はどう変化していくのか。そして、システム開発の最前線で活躍するエンジニアはどのような技術に注目しているのか。入社以来一貫してシステム開発に携わってきたエキスパートに聞いた。</p>
       </div>
-    </div>
-    <div class="interview__career">
+     </div>
+     <div class="interview__career">
       <p class="layout-4__title">Y.I.さんのキャリアパス</p>
       <div class="interview__career-flow">
-        <div class="interview__career-inner">
-          <p class="interview__career-catch">常駐SEから<br class="pc" />スタート</p>
-          <p class="interview__career-tag">START</p>
-          <p class="interview__career-text">常駐SEとしてキャリアをスタートし、運用・保守のリーダーやプロジェクトマネジメントを経験し、開発チームにアサインされるなど、プレーヤーとしての経験値を高める。</p>
-          <picture class="career-arrow1">
-            <source srcset="../../assets/images/talk/iida/flow_arrow_sp.png" media="(max-width: 767px)">
-            <img src="../../assets/images/talk/iida/flow_arrow.png" alt="矢印" width="32" height="321">
-          </picture>
-        </div>
-        <div class="interview__career-inner">
-          <p class="interview__career-catch">13年目で<br class="pc">スペシャリストに</p>
-          <p class="interview__career-tag">NOW</p>
-          <p class="interview__career-text">9年目から本社オフィス勤務になり、グループ向けシステム開発を担う。その後12年目にはPMPを取得し、その翌年にはスペシャリストに昇進。</p>
-          <picture class="career-arrow2">
-            <source srcset="../../assets/images/talk/iida/flow_arrow_sp.png" media="(max-width: 767px)">
-            <img src="../../assets/images/talk/iida/flow_arrow.png" alt="矢印" width="62" height="622">
-          </picture>
-        </div>
-        <div class="interview__career-inner career-arrow">
-          <p class="interview__career-catch">AI×ドローンが<br class="pc">実現する物流</p>
-          <p class="interview__career-tag">FUTURE</p>
-          <p class="interview__career-text">AI×ドローンが実現する物流についてのテキストが入ります。横並びのため、文字量は70〜80文字以内でお願いします。AI×ドローンが実現する物流について</p>
-        </div>
+       <div class="interview__career-inner">
+        <p class="interview__career-catch">常駐SEから<br class="pc" />スタート</p>
+        <p class="interview__career-tag">START</p>
+        <p class="interview__career-text">常駐SEとしてキャリアをスタートし、運用・保守のリーダーやプロジェクトマネジメントを経験し、開発チームにアサインされるなど、プレーヤーとしての経験値を高める。</p>
+        <picture class="career-arrow1">
+         <source srcset="../../assets/images/talk/iida/flow_arrow_sp.png" media="(max-width: 767px)" />
+         <img src="../../assets/images/talk/iida/flow_arrow.png" alt="矢印" width="32" height="321" />
+        </picture>
+       </div>
+       <div class="interview__career-inner">
+        <p class="interview__career-catch">13年目で<br class="pc" />スペシャリストに</p>
+        <p class="interview__career-tag">NOW</p>
+        <p class="interview__career-text">9年目から本社オフィス勤務になり、グループ向けシステム開発を担う。その後12年目にはPMPを取得し、その翌年にはスペシャリストに昇進。</p>
+        <picture class="career-arrow2">
+         <source srcset="../../assets/images/talk/iida/flow_arrow_sp.png" media="(max-width: 767px)" />
+         <img src="../../assets/images/talk/iida/flow_arrow.png" alt="矢印" width="62" height="622" />
+        </picture>
+       </div>
+       <div class="interview__career-inner career-arrow">
+        <p class="interview__career-catch">AI×ドローンが<br class="pc" />実現する物流</p>
+        <p class="interview__career-tag">FUTURE</p>
+        <p class="interview__career-text">AI×ドローンが実現する物流についてのテキストが入ります。横並びのため、文字量は70〜80文字以内でお願いします。AI×ドローンが実現する物流について</p>
+       </div>
       </div>
+     </div>
+
+     <div class="interview__item">
+      <div class="interview__imageArea">
+       <picture class="interview__picture cover">
+        <source srcset="../../assets/images/talk/iida/talk_img01_sp.jpg" media="(max-width: 767px)" />
+        <img src="../../assets/images/talk/iida/talk_img01.jpg" alt="Y.I." width="800" height="1190" />
+       </picture>
+      </div>
+      <div class="interview__textArea">
+       <p class="interview__tag"><span>SEのキャリア</span></p>
+       <h2 class="interview__title">入社以来、これまでにどのようなシステム開発に<br class="pc" />携わってこられたのでしょう？</h2>
+       <p class="interview__p">
+        システム開発の本質は課題解決です。得意とする分野はそれぞれのSIerで異なりますが、企業が抱える課題を解決するという目的は同じです。そのなかで私がヤマトシステム開発を選んだのは、ヤマトグループの物流ネットワークを利用することによって、他社とは違う価値を創出できると考えたからです。入社後、私のキャリアはお客さまオフィスで勤務する、いわゆる常駐SEとしてスタートしました。まず航空関連企業で航空貨物精算システムを構築。次に、国際線航空券予約Webサイトに関する運用・保守プロジェクトのリーダーとなり、プロジェクトマネジメントを経験しました。私がシステム開発の基礎を身につけたのはこの時期です。6年目にはWebサイトに関する開発の経験を買われて、食品関連企業の開発チームにアサインされ、ECサイトをパッケージ化して他企業に展開していくプロジェクトに携わりました。私が常駐SEの任を離れ、本社オフィス勤務となったのは入社9年目です。ここではヤマトグループ向け勤怠システムの改修プロジェクトでサブシステムのリーダーを務めたほか、ヤマトグループ向け人事評価支援システムなどの構築に携わり、現在はドライバー向けの業務端末リニューアル案件を担当しています。実装に向けて2021年からフィールドテストを重ねており、2022年から全国に展開する予定です。こうして振り返ると、ある案件で得た知識や経験を次のビジネスに活かしていく形で、業務範囲を広げてきたと実感します。年次とともに与えられる役割も変化し、今期からはプロジェクトマネジメントだけでなく、チーム全体の品質管理を担当するようになっています。また12年目にPMP（ProjectManagement
+        Professional）を取得し、13年目にはスペシャリストに昇進しています。
+       </p>
+      </div>
+     </div>
+     <div class="interview__item reverse">
+      <div class="interview__imageArea">
+       <picture class="interview__picture cover">
+        <source srcset="../../assets/images/talk/iida/talk_img02_sp.jpg" media="(max-width: 767px)" />
+        <img src="../../assets/images/talk/iida/talk_img02.jpg" alt="Y.I." width="800" height="1166" />
+       </picture>
+      </div>
+      <div class="interview__textArea">
+       <p class="interview__tag"><span>注目の技術</span></p>
+       <h2 class="interview__title">これまで多くのシステム開発を<br class="pc" />手がけてきた経験を踏まえ、<br class="pc" />今後注目したい技術は何でしょうか。</h2>
+       <p class="interview__p">
+        やはり注目すべきはAIやディープラーニングでしょう。私は将棋が好きで、自宅のPCにはプロ棋士も利用するAIソフトをインストールしています。近年の将棋ソフトの進化ぶりを見ると、個人的にもAIの持つ高い可能性を感じています。<br />ヤマトグループとAIの相性も抜群です。例えば宅急便の配送ルート設定は、まだ経験に頼るところが大です。しかしヤマトグループに蓄積されたビッグデータからディープラーニングによって最適のルートを割り出せるようになれば、輸送効率は各段に向上し、ドライバーの労働環境改善にもつながるはずです。<br />また、以前、部屋の写真をスマホで送ると自動で引っ越しの見積もり金額を算出するシステムの構築を進めていたことがあり、画像認識も今後利用が進む技術のひとつだと感じています。これも大きく括るとAIですね。スマホで送られた画像を解析し、荷物の量や重さを推測する技術です。<br />他のチームが開発したものでは、ハウスクリーニング業者向けのアプリの仕組みも面白いと思いました。これは写真で現状および作業後確認を行い、電子サインによる決済確認まで済ませるというものです。このようにAIによる画像認識はシーンに応じたさまざまな利用方法が考えられるため、多くのシステム開発で利用されていくと予想しています。
+       </p>
+      </div>
+     </div>
+     <div class="interview__item">
+      <div class="interview__imageArea">
+       <picture class="interview__picture cover">
+        <source srcset="../../assets/images/talk/iida/talk_img03_sp.jpg" media="(max-width: 767px)" />
+        <img src="../../assets/images/talk/iida/talk_img03.jpg" alt="Y.I." width="800" height="1190" />
+       </picture>
+      </div>
+      <div class="interview__textArea">
+       <p class="interview__tag"><span>技術の現在と未来</span></p>
+       <h2 class="interview__title">AIや画像認識などの最新技術は、<br class="pc" />現在ヤマトシステム開発のシステム開発で<br class="pc" />どのように利用されているのでしょう？</h2>
+       <p class="interview__p">
+        前述のハウスクリーニング業者向けアプリはすでにリリースされていますし、ヤマト運輸の物流拠点では、高品質で高効率の検品を実現する検品支援システムが稼働しています。これはAIによる画像認識技術で荷物サイズの検知をするものです。<br />しかし、AIによる宅急便の配送ルート設定については、まだまだ解決すべき課題が山積しているといっていいでしょう。ルート作成の手間や時間は減らせても、AIの作成したルートが絶対的に正しいと評価されるまでにはまだ時間がかかります。というのもルート設定には渋滞などの交通情報のほか、天気や荷物の種類、日時や近隣のイベント情報など、さまざまな要素を分析して判断する必要があるからです。そうした評価項目を正しく設定し、十分かつ正しい学習が進むまでは、ドライバー個々の経験則が勝るケースも起こり得ます。何を学習させるかも大きな問題ですし、どのようなシーンで、どのような性質の方が利用するかも明確にしたうえで設計する必要があります。少なくとも実際に利用する方へのヒアリングと認識合わせが重要です。AIを使う上では、まだ最終的には人によるチェックが必要な部分も多く、AIと人間のいいところをどのように組み合わせるかが当面の課題だと認識しています。<br />しかし、将来的には家の前に宅急便を置いておけば、ドローンが荷物を回収し、自動で料金を計算して電子決済してくれる。そして預かった荷物はAIが最適なルートを設定して自動配送するという未来が実現する可能性もあります。そうなれば慢性的なドライバー不足という運輸業界全体の問題も解決できます。これこそ運輸ネットワークを持つヤマトグループがめざす価値提供ではないでしょうか。
+       </p>
+      </div>
+     </div>
+     <div class="interview__item reverse">
+      <div class="interview__imageArea">
+       <picture class="interview__picture cover">
+        <source srcset="../../assets/images/talk/iida/talk_img04_sp.jpg" media="(max-width: 767px)" />
+        <img src="../../assets/images/talk/iida/talk_img04.jpg" alt="Y.I." width="800" height="1166" />
+       </picture>
+      </div>
+      <div class="interview__textArea">
+       <p class="interview__tag"><span>メッセージ</span></p>
+       <h2 class="interview__title">最後に、SEをめざす学生にヤマトシステム開発で<br />働く魅力を伝えてください。</h2>
+       <p class="interview__p">
+        私は高校生の頃に何かの雑誌で「SEとは多くの力を結集し、社会が抱える課題を解決する職業だ」と読んで以来、ずっとSE志望でした。当初は理系学部への進学を目指していましたが、物理が絶望的にできずに断念。システム寄りの学問が修められる経営学部を選択しました。その後、縁あってヤマトシステム開発に就職し、システム開発に携わる夢を叶えたわけですが、自らの経験からSEに文理は関係ないと断言します。SEという仕事は技術力も大事ですが、その技術を仕事で活かすためには人に伝える力など、技術以外の部分も重要です。システム開発は一人ではできません。SEはコミュニケーションや周囲の力を利用する能力が求められる仕事なのです。<br />とりわけヤマトシステム開発は教育研修体制がしっかりしているので未経験者でもしっかり一から学べます。学生時代からバリバリ技術志向の人はもちろん、入社してから技術に興味を持った人も力を伸ばしていく機会がたくさんあると思います。もちろん、大学で学んだ専門知識は無駄にはなりませんが、日々進化する技術を活用するには、生涯学び続ける必要があります。その不断の努力があれば、今やインフラとして認知されている宅急便とそれに関わる仕組みに対して、新しいサービスや効率的なやり方を生み出し、社会に貢献するチャンスがヤマトシステム開発には広がっています。
+       </p>
+      </div>
+     </div>
     </div>
+   </section>
+   <!-- ↑↑↑ interview ↑↑↑ -->
+  </main>
+  <!-- ↑↑↑ main ↑↑↑ -->
 
-    <div class="interview__item">
-     <div class="interview__imageArea">
-      <picture class="interview__picture cover">
-       <source srcset="../../assets/images/talk/iida/talk_img01_sp.jpg" media="(max-width: 767px)">
-       <img src="../../assets/images/talk/iida/talk_img01.jpg" alt="Y.I." width="800" height="1190">
-      </picture>
+  <!-- ↓↓↓ footer ↓↓↓ -->
+  <footer class="footer">
+   <div class="footer__container">
+    <div class="footer__logoArea">
+     <img src="/HR/assets/images/common/footer_logo.svg" alt="ヤマトシステム開発" class="footer__logo" width="300" height="54" />
+    </div>
+    <div class="footer__grid">
+     <div class="footer__column">
+      <h2 class="footer__title">未来の動かし方</h2>
+      <ul class="footer__list">
+       <li><a href="/HR/future/business/">私たちが動かす未来</a></li>
+       <li><a href="/HR/future/feature/">未来を動かせる理由</a></li>
+       <li><a href="/HR/future/initiative/">動き始めた未来</a></li>
+       <li><a href="/HR/future/talk/">未来を動かす人</a></li>
+      </ul>
      </div>
-     <div class="interview__textArea">
-      <p class="interview__tag"><span>SEのキャリア</span></p>
-      <h2 class="interview__title">入社以来、これまでにどのようなシステム開発に<br class="pc" />携わってこられたのでしょう？
-      </h2>
-      <p class="interview__p">
-       システム開発の本質は課題解決です。得意とする分野はそれぞれのSIerで異なりますが、企業が抱える課題を解決するという目的は同じです。そのなかで私がヤマトシステム開発を選んだのは、ヤマトグループの物流ネットワークを利用することによって、他社とは違う価値を創出できると考えたからです。入社後、私のキャリアはお客さまオフィスで勤務する、いわゆる常駐SEとしてスタートしました。まず航空関連企業で航空貨物精算システムを構築。次に、国際線航空券予約Webサイトに関する運用・保守プロジェクトのリーダーとなり、プロジェクトマネジメントを経験しました。私がシステム開発の基礎を身につけたのはこの時期です。6年目にはWebサイトに関する開発の経験を買われて、食品関連企業の開発チームにアサインされ、ECサイトをパッケージ化して他企業に展開していくプロジェクトに携わりました。私が常駐SEの任を離れ、本社オフィス勤務となったのは入社9年目です。ここではヤマトグループ向け勤怠システムの改修プロジェクトでサブシステムのリーダーを務めたほか、ヤマトグループ向け人事評価支援システムなどの構築に携わり、現在はドライバー向けの業務端末リニューアル案件を担当しています。実装に向けて2021年からフィールドテストを重ねており、2022年から全国に展開する予定です。こうして振り返ると、ある案件で得た知識や経験を次のビジネスに活かしていく形で、業務範囲を広げてきたと実感します。年次とともに与えられる役割も変化し、今期からはプロジェクトマネジメントだけでなく、チーム全体の品質管理を担当するようになっています。また12年目にPMP（ProjectManagement
-       Professional）を取得し、13年目にはスペシャリストに昇進しています。
-      </p>
+     <div class="footer__column">
+      <h2 class="footer__title">企業について</h2>
+      <ul class="footer__list">
+       <li><a href="/HR/company/location/">会社概要／開発拠点</a></li>
+       <li><a href="/HR/company/message/">トップメッセージ</a></li>
+       <li>
+        <a href="/HR/company/development/">数字で見る<br />ヤマトシステム開発</a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer__column">
+      <h2 class="footer__title">職種と仕事</h2>
+      <ul class="footer__list">
+       <li><a href="/HR/works/introduction/">職種紹介</a></li>
+       <li><a href="/HR/works/interview/">社員インタビュートップ</a></li>
+       <li><a href="/HR/works/1week/">先輩社員の1週間</a></li>
+       <li><a href="/HR/works/young-faq/">若手が答えるQ&A</a></li>
+      </ul>
+     </div>
+     <div class="footer__column">
+      <h2 class="footer__title">キャリアと働く環境</h2>
+      <ul class="footer__list">
+       <li><a href="/HR/career/course/">選べるキャリアコース</a></li>
+       <li><a href="/HR/career/education/">教育体系・研修制度</a></li>
+       <li><a href="/HR/career/welfare/">福利厚生・健康経営</a></li>
+       <li><a href="/HR/career/reform/">働き方改革</a></li>
+      </ul>
+     </div>
+     <div class="footer__column">
+      <h2 class="footer__title">採用情報</h2>
+      <ul class="footer__list">
+       <li><a href="/HR/recruit/">募集要項</a></li>
+       <li><a href="/HR/recruit/schedule/">採用スケジュール</a></li>
+       <li><a href="/HR/recruit/event/">採用イベント情報</a></li>
+       <li><a href="/HR/recruit/faq/">採用FAQ</a></li>
+      </ul>
      </div>
     </div>
-    <div class="interview__item reverse">
-     <div class="interview__imageArea">
-      <picture class="interview__picture cover">
-       <source srcset="../../assets/images/talk/iida/talk_img02_sp.jpg" media="(max-width: 767px)">
-       <img src="../../assets/images/talk/iida/talk_img02.jpg" alt="Y.I." width="800" height="1166">
-      </picture>
-     </div>
-     <div class="interview__textArea">
-      <p class="interview__tag"><span>注目の技術</span></p>
-      <h2 class="interview__title">これまで多くのシステム開発を<br class="pc" />手がけてきた経験を踏まえ、<br class="pc" />今後注目したい技術は何でしょうか。</h2>
-      <p class="interview__p">
-       やはり注目すべきはAIやディープラーニングでしょう。私は将棋が好きで、自宅のPCにはプロ棋士も利用するAIソフトをインストールしています。近年の将棋ソフトの進化ぶりを見ると、個人的にもAIの持つ高い可能性を感じています。<br />ヤマトグループとAIの相性も抜群です。例えば宅急便の配送ルート設定は、まだ経験に頼るところが大です。しかしヤマトグループに蓄積されたビッグデータからディープラーニングによって最適のルートを割り出せるようになれば、輸送効率は各段に向上し、ドライバーの労働環境改善にもつながるはずです。<br />また、以前、部屋の写真をスマホで送ると自動で引っ越しの見積もり金額を算出するシステムの構築を進めていたことがあり、画像認識も今後利用が進む技術のひとつだと感じています。これも大きく括るとAIですね。スマホで送られた画像を解析し、荷物の量や重さを推測する技術です。<br />他のチームが開発したものでは、ハウスクリーニング業者向けのアプリの仕組みも面白いと思いました。これは写真で現状および作業後確認を行い、電子サインによる決済確認まで済ませるというものです。このようにAIによる画像認識はシーンに応じたさまざまな利用方法が考えられるため、多くのシステム開発で利用されていくと予想しています。
-      </p>
-     </div>
-    </div>
-    <div class="interview__item">
-     <div class="interview__imageArea">
-      <picture class="interview__picture cover">
-       <source srcset="../../assets/images/talk/iida/talk_img03_sp.jpg" media="(max-width: 767px)">
-       <img src="../../assets/images/talk/iida/talk_img03.jpg" alt="Y.I." width="800" height="1190">
-      </picture>
-     </div>
-     <div class="interview__textArea">
-      <p class="interview__tag"><span>技術の現在と未来</span></p>
-      <h2 class="interview__title">AIや画像認識などの最新技術は、<br class="pc" />現在ヤマトシステム開発のシステム開発で<br
-        class="pc" />どのように利用されているのでしょう？</h2>
-      <p class="interview__p">
-       前述のハウスクリーニング業者向けアプリはすでにリリースされていますし、ヤマト運輸の物流拠点では、高品質で高効率の検品を実現する検品支援システムが稼働しています。これはAIによる画像認識技術で荷物サイズの検知をするものです。<br />しかし、AIによる宅急便の配送ルート設定については、まだまだ解決すべき課題が山積しているといっていいでしょう。ルート作成の手間や時間は減らせても、AIの作成したルートが絶対的に正しいと評価されるまでにはまだ時間がかかります。というのもルート設定には渋滞などの交通情報のほか、天気や荷物の種類、日時や近隣のイベント情報など、さまざまな要素を分析して判断する必要があるからです。そうした評価項目を正しく設定し、十分かつ正しい学習が進むまでは、ドライバー個々の経験則が勝るケースも起こり得ます。何を学習させるかも大きな問題ですし、どのようなシーンで、どのような性質の方が利用するかも明確にしたうえで設計する必要があります。少なくとも実際に利用する方へのヒアリングと認識合わせが重要です。AIを使う上では、まだ最終的には人によるチェックが必要な部分も多く、AIと人間のいいところをどのように組み合わせるかが当面の課題だと認識しています。<br />しかし、将来的には家の前に宅急便を置いておけば、ドローンが荷物を回収し、自動で料金を計算して電子決済してくれる。そして預かった荷物はAIが最適なルートを設定して自動配送するという未来が実現する可能性もあります。そうなれば慢性的なドライバー不足という運輸業界全体の問題も解決できます。これこそ運輸ネットワークを持つヤマトグループがめざす価値提供ではないでしょうか。
-      </p>
-     </div>
-    </div>
-    <div class="interview__item reverse">
-     <div class="interview__imageArea">
-      <picture class="interview__picture cover">
-       <source srcset="../../assets/images/talk/iida/talk_img04_sp.jpg" media="(max-width: 767px)">
-       <img src="../../assets/images/talk/iida/talk_img04.jpg" alt="Y.I." width="800" height="1166">
-      </picture>
-     </div>
-     <div class="interview__textArea">
-      <p class="interview__tag"><span>メッセージ</span></p>
-      <h2 class="interview__title">最後に、SEをめざす学生にヤマトシステム開発で<br />働く魅力を伝えてください。</h2>
-      <p class="interview__p">
-       私は高校生の頃に何かの雑誌で「SEとは多くの力を結集し、社会が抱える課題を解決する職業だ」と読んで以来、ずっとSE志望でした。当初は理系学部への進学を目指していましたが、物理が絶望的にできずに断念。システム寄りの学問が修められる経営学部を選択しました。その後、縁あってヤマトシステム開発に就職し、システム開発に携わる夢を叶えたわけですが、自らの経験からSEに文理は関係ないと断言します。SEという仕事は技術力も大事ですが、その技術を仕事で活かすためには人に伝える力など、技術以外の部分も重要です。システム開発は一人ではできません。SEはコミュニケーションや周囲の力を利用する能力が求められる仕事なのです。<br />とりわけヤマトシステム開発は教育研修体制がしっかりしているので未経験者でもしっかり一から学べます。学生時代からバリバリ技術志向の人はもちろん、入社してから技術に興味を持った人も力を伸ばしていく機会がたくさんあると思います。もちろん、大学で学んだ専門知識は無駄にはなりませんが、日々進化する技術を活用するには、生涯学び続ける必要があります。その不断の努力があれば、今やインフラとして認知されている宅急便とそれに関わる仕組みに対して、新しいサービスや効率的なやり方を生み出し、社会に貢献するチャンスがヤマトシステム開発には広がっています。
-      </p>
-     </div>
+    <div class="footer__bottom">
+     <ul class="footer__list2">
+      <li><a href="/HR/talk/iida/">テーマトーク</a></li>
+      <li>
+       <a href="/HR/comics/">マンガでわかる！<br class="sp" />IT業界の目指し方</a>
+      </li>
+     </ul>
+     <ul class="footer__list3">
+      <li><a href="https://www.nekonet.co.jp/policy" target="_blank">プライバシーポリシー</a></li>
+      <li><a href="https://www.nekonet.co.jp/about" target="_blank">サイトポリシー</a></li>
+     </ul>
     </div>
    </div>
-
-  </section>
-  <!-- ↑↑↑ interview ↑↑↑ -->
-
-
- </main>
- <!-- ↑↑↑ main ↑↑↑ -->
-
- <!-- ↓↓↓ footer ↓↓↓ -->
-<footer class="footer">
- <div class="footer__container">
-  <div class="footer__logoArea">
-   <img src="/HR/assets/images/common/footer_logo.svg" alt="ヤマトシステム開発" class="footer__logo"
-    width="300" height="54">
-  </div>
-  <div class="footer__grid">
-   <div class="footer__column">
-    <h2 class="footer__title">未来の動かし方</h2>
-    <ul class="footer__list">
-     <li><a href="/HR/future/business/">私たちが動かす未来</a></li>
-     <li><a href="/HR/future/feature/">未来を動かせる理由</a></li>
-     <li><a href="/HR/future/initiative/">動き始めた未来</a></li>
-     <li><a href="/HR/future/talk/">未来を動かす人</a></li>
-    </ul>
+   <div class="footer__copyright">
+    <p><small>© 2022 Yamato System Development Co.,Ltd. All Rights Reserved.</small></p>
    </div>
-   <div class="footer__column">
-    <h2 class="footer__title">企業について</h2>
-    <ul class="footer__list">
-     <li><a href="/HR/company/location/">会社概要／開発拠点</a></li>
-     <li><a href="/HR/company/message/">トップメッセージ</a></li>
-     <li><a href="/HR/company/development/">数字で見る<br />ヤマトシステム開発</a></li>
-    </ul>
-   </div>
-   <div class="footer__column">
-    <h2 class="footer__title">職種と仕事</h2>
-    <ul class="footer__list">
-     <li><a href="/HR/works/introduction/">職種紹介</a></li>
-     <li><a href="/HR/works/interview/">社員インタビュートップ</a></li>
-     <!-- <li><a href="">先輩社員の1週間</a></li> -->
-     <!-- <li><a href="">若手社員コンテンツ</a></li> -->
-    </ul>
-   </div>
-   <div class="footer__column">
-    <h2 class="footer__title">キャリアと働く環境</h2>
-    <ul class="footer__list">
-     <li><a href="/HR/career/course/">選べるキャリアコース</a></li>
-     <li><a href="/HR/career/education/">教育体系・研修制度</a></li>
-     <li><a href="/HR/career/welfare/">福利厚生・健康経営</a></li>
-     <li><a href="/HR/career/reform/">働き方改革</a></li>
-    </ul>
-   </div>
-   <div class="footer__column">
-    <h2 class="footer__title">採用情報</h2>
-    <ul class="footer__list">
-     <li><a href="/HR/recruit/">募集要項</a></li>
-     <li><a href="/HR/recruit/schedule/">採用スケジュール</a></li>
-     <li><a href="/HR/recruit/event/">採用イベント情報</a></li>
-     <li><a href="/HR/recruit/faq/">採用FAQ</a></li>
-    </ul>
-   </div>
-  </div>
-  <div class="footer__bottom">
-   <ul class="footer__list2">
-    <li><a href="/HR/talk/iida/">テーマトーク</a></li>
-    <li><a href="/HR/comics/">マンガでわかる！<br class="sp" />IT業界の目指し方</a></li>
-   </ul>
-   <ul class="footer__list3">
-    <li><a href="https://www.nekonet.co.jp/policy" target="_blank">プライバシーポリシー</a></li>
-    <li><a href="https://www.nekonet.co.jp/about" target="_blank">サイトポリシー</a></li>
-   </ul>
-  </div>
- </div>
- <div class="footer__copyright">
-  <p><small>© 2022 Yamato System Development Co.,Ltd. All Rights Reserved.</small></p>
- </div>
-</footer>
-<!-- ↑↑↑ footer ↑↑↑ -->
+  </footer>
+  <!-- ↑↑↑ footer ↑↑↑ -->
 
-<!-- ↓↓↓ js ↓↓↓ -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
- integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="/HR/assets/js/common.js"></script>
-<!-- ↑↑↑ js ↑↑↑ --></body>
-
+  <!-- ↓↓↓ js ↓↓↓ -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/HR/assets/js/common.js"></script>
+  <!-- ↑↑↑ js ↑↑↑ -->
+ </body>
 </html>
