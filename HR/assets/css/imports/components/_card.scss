@@ -949,7 +949,7 @@
 }
 
 // -----------------------------------------------
-// card-13
+// card-13（社員紹介 アンカーリンクあり）
 // -----------------------------------------------
 .card-13 {
   margin-top: 1rem;
@@ -1036,4 +1036,72 @@
       }
     }
   }
+}
+
+// -----------------------------------------------
+// card-14（社員紹介 アンカーリンク無し）
+// -----------------------------------------------
+.card-14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.8rem;
+  border: 1px solid $yellow;
+  @include sp {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  .youngFaq {
+    &-icon {
+      width: 10rem;
+      height: auto;
+      margin: 2.8rem 0;
+      @include sp {
+        width: 8rem;
+        margin: 1.6rem auto 0.3rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-intro {
+      margin-left: 2rem;
+      @include sp {
+        margin-left: 0;
+        padding-bottom: 1.6rem;
+      }
+    }
+    &-name {
+      font-size: 2rem;
+      @include sp {
+        font-size: 1.6rem;
+      }
+    }
+    &-tag {
+      margin-top: 0.6rem;
+      padding: 0 1.2rem 0.2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      background-color: $yellow;
+      border-radius: 2.6rem;
+      @include sp {
+        display: inline-block;
+        padding: 0.2rem 1.2rem;
+        font-size: 1rem;
+      }
+    }
+    &-text {
+      margin-top: 0.8rem;
+      font-size: 1.2rem;
+      @include sp {
+        font-size: 1rem;
+      }
+    }
+  }
+
 }
