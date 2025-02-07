@@ -476,7 +476,7 @@
 // -----------------------------------------------
 .card-6 {
  background-color: $yellow;
- cursor: pointer;
+ // cursor: pointer;
 
  button {
   width: 100%;
@@ -490,16 +490,16 @@
    height: 12.2rem;
   }
 
-  .faq-open {
-   position: absolute;
-   bottom: 1rem;
-   right: 1rem;
-   display: block;
-   width: 2.8rem;
-   height: 2.8rem;
-   background: url(../../assets/images/future/business/accordion_open.png) no-repeat;
-   background-size: 2.6rem;
-  }
+  // .faq-open {
+  //  position: absolute;
+  //  bottom: 1rem;
+  //  right: 1rem;
+  //  display: block;
+  //  width: 2.8rem;
+  //  height: 2.8rem;
+  //  background: url(../../assets/images/future/business/accordion_open.png) no-repeat;
+  //  background-size: 2.6rem;
+  // }
  }
 
  &__title {
