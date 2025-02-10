@@ -2,257 +2,254 @@
 // history
 // -----------------------------------------------
 .history {
-  border: 1px solid rgba(15, 15, 15, 0.1);
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    padding: 4.5rem 5rem 4.5rem 10.7rem;
-    position: relative;
-    @include sp {
-      padding: 3.5rem 2.5rem 3rem 4.5rem;
-      display: block;
-    }
-    &:nth-child(even) {
-      background: #fbfbfb;
-    }
-    &:not(:last-child) {
-      &::before {
-        content: '';
-        background-image: url(../images/common/dot_vertical.png);
-        background-repeat: repeat-y;
-        background-position: center top;
-        background-size: 1px;
-        position: absolute;
-        left: 5.75rem;
-        top: 6.5rem;
-        width: 1px;
-        height: 100%;
-        z-index: 2;
-        @include sp {
-          left: 2.6rem;
-          top: 4.3rem;
-        }
-      }
-    }
+ border: 1px solid rgba(15, 15, 15, 0.1);
+ &__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.5rem 5rem 4.5rem 10.7rem;
+  position: relative;
+  @include sp {
+   padding: 3.5rem 2.5rem 3rem 4.5rem;
+   display: block;
   }
-  &__target {
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50%;
-    background-color: $yellow;
+  &:nth-child(even) {
+   background: #fbfbfb;
+  }
+  &:not(:last-child) {
+   &::before {
+    content: '';
+    background-image: url(../images/common/dot_vertical.png);
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 1px;
     position: absolute;
-    left: 5.2rem;
-    top: 6.4rem;
-    z-index: 3;
+    left: 5.75rem;
+    top: 6.5rem;
+    width: 1px;
+    height: 100%;
+    z-index: 2;
     @include sp {
-      width: 0.7rem;
-      height: 0.7rem;
-      left: 2.3rem;
-      top: 4rem;
+     left: 2.6rem;
+     top: 4.3rem;
     }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 2.5rem;
-      height: 2.5rem;
-      border: 1px solid $yellow;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      @include sp {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-    }
+   }
   }
-  &__textArea {
-    width: 48.3rem;
-    margin-top: -1rem;
-    @include sp {
-      width: 100%;
-    }
+ }
+ &__target {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: $yellow;
+  position: absolute;
+  left: 5.2rem;
+  top: 6.4rem;
+  z-index: 3;
+  @include sp {
+   width: 0.7rem;
+   height: 0.7rem;
+   left: 2.3rem;
+   top: 4rem;
   }
-  &__title {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2rem; /* 100% */
-    letter-spacing: 0.08rem;
-    margin: 0.9rem 0 1.5rem;
-    @include sp {
-      font-size: 1.4rem;
-      line-height: 2.4rem; /* 171.429% */
-      letter-spacing: 0.056rem;
-      margin: 0.7rem 0 0.6rem;
-    }
+  &::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 2.5rem;
+   height: 2.5rem;
+   border: 1px solid $yellow;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   @include sp {
+    width: 1.5rem;
+    height: 1.5rem;
+   }
   }
-  &__number {
-    color: $yellow;
-    font-family: $Poppins;
-    font-size: 8.8rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    line-height: 1;
-    @include sp {
-      font-size: 4rem;
-    }
-    span {
-      color: #0f0f0f;
-      font-family: $gothic;
-      font-size: 1.3rem;
-      font-weight: 400;
-      letter-spacing: 0.039rem;
-      border-radius: 9.9rem;
-      border: 1px solid $yellow;
-      padding: 0.9rem 2rem;
-      margin-left: 1.7rem;
-      @include sp {
-        font-size: 1rem;
-        letter-spacing: 0.03rem;
-        padding: 0.6rem 1.4rem;
-        margin-left: 1rem;
-      }
-    }
+ }
+ &__textArea {
+  width: 48.3rem;
+  margin-top: -1rem;
+  @include sp {
+   width: 100%;
   }
-  &__p {
-    text-align: justify;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 2.8rem; /* 200% */
-    letter-spacing: 0.014rem;
-    margin-top: 0.8rem;
-    @include sp {
-      font-size: 1.2rem;
-      line-height: 2.2rem; /* 183.333% */
-      letter-spacing: 0.048rem;
-    }
-    a {
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
+ }
+ &__title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem; /* 100% */
+  letter-spacing: 0.08rem;
+  margin: 0.9rem 0 1.5rem;
+  @include sp {
+   font-size: 1.4rem;
+   line-height: 2.4rem; /* 171.429% */
+   letter-spacing: 0.056rem;
+   margin: 0.7rem 0 0.6rem;
   }
-  &__small {
-    text-align: right;
-    padding: 2.8rem 5rem 0 0;
-    @include sp {
-      text-align: left;
-      padding: 2.2rem 0 0 0;
-    }
-    small {
-      font-size: 1.2rem;
-      line-height: 2.8rem; /* 233.333% */
-      letter-spacing: 0.012rem;
-      opacity: 0.4;
-      @include sp {
-        font-size: 1rem;
-        line-height: 1.6rem; /* 160% */
-        letter-spacing: 0.01rem;
-      }
-    }
+ }
+ &__number {
+  color: $yellow;
+  font-family: $Poppins;
+  font-size: 8.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  @include sp {
+   font-size: 4rem;
   }
-  &__imgArea {
-    width: 32.4rem;
-    @include sp {
-      width: 100%;
-      margin-top: 2rem;
-    }
-    img {
-      border: 1px solid rgba(15, 15, 15, 0.1);
-    }
-    figcaption {
-      font-size: 1.1rem;
-      font-weight: 400;
-      line-height: 2rem; /* 181.818% */
-      letter-spacing: 0.044rem;
-      margin-top: 0.5rem;
-    }
+  span {
+   color: #0f0f0f;
+   font-family: $gothic;
+   font-size: 1.3rem;
+   font-weight: 400;
+   letter-spacing: 0.039rem;
+   border-radius: 9.9rem;
+   border: 1px solid $yellow;
+   padding: 0.9rem 2rem;
+   margin-left: 1.7rem;
+   @include sp {
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    padding: 0.6rem 1.4rem;
+    margin-left: 1rem;
+   }
   }
+ }
+ &__p {
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.8rem; /* 200% */
+  letter-spacing: 0.014rem;
+  margin-top: 0.8rem;
+  @include sp {
+   font-size: 1.2rem;
+   line-height: 2.2rem; /* 183.333% */
+   letter-spacing: 0.048rem;
+  }
+  a {
+   text-decoration: underline;
+   text-underline-offset: 2px;
+  }
+ }
+ &__small {
+  text-align: right;
+  padding: 2.8rem 5rem 0 0;
+  @include sp {
+   text-align: left;
+   padding: 2.2rem 0 0 0;
+  }
+  small {
+   font-size: 1.2rem;
+   line-height: 2.8rem; /* 233.333% */
+   letter-spacing: 0.012rem;
+   opacity: 0.4;
+   @include sp {
+    font-size: 1rem;
+    line-height: 1.6rem; /* 160% */
+    letter-spacing: 0.01rem;
+   }
+  }
+ }
+ &__imgArea {
+  width: 32.4rem;
+  @include sp {
+   width: 100%;
+   margin-top: 2rem;
+  }
+  img {
+   border: 1px solid rgba(15, 15, 15, 0.1);
+  }
+  figcaption {
+   font-size: 1.1rem;
+   font-weight: 400;
+   line-height: 2rem; /* 181.818% */
+   letter-spacing: 0.044rem;
+   margin-top: 0.5rem;
+  }
+ }
 }
 // -----------------------------------------------
 // feature-history
 // -----------------------------------------------
 
 .feature-history {
-  max-width: 91.8rem;
-  margin: auto;
-  .history__target {
-    top: 5.7rem;
-    left: 4.7rem;
-    @include sp {
-      left: 2.3rem;
-      top: 4rem;
-    }
+ max-width: 91.8rem;
+ margin: auto;
+ .history__target {
+  top: 5.7rem;
+  left: 4.7rem;
+  @include sp {
+   left: 2.3rem;
+   top: 4rem;
   }
-  .history__item {
-    padding: 5.3rem 5rem 4rem 10.7rem;
-    @include sp {
-      padding: 3.5rem 3.2rem 2.5rem 4.4rem;
-    }
-    &::before {
-      left: 5.25rem;
-      top: 5.8rem;
-      @include sp {
-        left: 2.6rem;
-        top: 4.7rem;
-      }
-    }
+ }
+ .history__item {
+  padding: 5.3rem 5rem 4rem 10.7rem;
+  @include sp {
+   padding: 3.5rem 3.2rem 2.5rem 4.4rem;
   }
-  .history__number {
-    font-size: 4rem;
-    @include sp {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    span {
-      padding: 0.7rem 2rem;
-      @include sp {
-        padding: 0.5rem 1.4rem;
-        margin: 1.3rem 0 0.5rem;
-        line-height: 1.3rem; /* 130% */
-      }
-    }
+  &::before {
+   left: 5.25rem;
+   top: 5.8rem;
+   @include sp {
+    left: 2.6rem;
+    top: 4.7rem;
+   }
   }
-  .history__textArea {
-    width: 100%;
+ }
+ .history__number {
+  font-size: 4rem;
+  @include sp {
+   flex-direction: column;
+   align-items: flex-start;
   }
-  .history__p {
-    margin-top: 1.3rem;
-    font-weight: 400;
-    line-height: 2.8rem; /* 175% */
-    letter-spacing: 0.064rem;
-    font-size: 1.6rem;
-    @include sp {
-      font-size: 1.2rem;
-      line-height: 2.2rem; /* 183.333% */
-      letter-spacing: 0.048rem;
-      margin-top: 0.6rem;
-    }
+  span {
+   padding: 0.7rem 2rem;
+   @include sp {
+    padding: 0.5rem 1.4rem;
+    margin: 1.3rem 0 0.5rem;
+    line-height: 1.3rem; /* 130% */
+   }
   }
+ }
+ .history__textArea {
+  width: 100%;
+ }
+ .history__p {
+  margin-top: 1.3rem;
+  font-weight: 400;
+  line-height: 2.8rem; /* 175% */
+  letter-spacing: 0.064rem;
+  font-size: 1.6rem;
+  @include sp {
+   font-size: 1.2rem;
+   line-height: 2.2rem; /* 183.333% */
+   letter-spacing: 0.048rem;
+   margin-top: 0.6rem;
+  }
+ }
 }
 
 // -----------------------------------------------
 // interview-history
 // -----------------------------------------------
 .interview-history {
-  @include sp {
-    margin-bottom: 10rem;
+ .history__number {
+  display: block;
+  &::after {
+   content: '年目';
+   font-size: 2.4rem;
+   font-style: normal;
+   font-weight: 600;
+   @include sp {
+    vertical-align: middle;
+   }
   }
-  .history__number {
-    display: block;
-    &::after {
-      content: '年目';
-      font-size: 2.4rem;
-      font-style: normal;
-      font-weight: 600;
-      @include sp {
-        vertical-align: middle;
-      }
-    }
-  }
-  .history__p.border-top {
-    border-top: 1px solid rgba($color: #0f0f0f, $alpha: 0.1);
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-  }
+ }
+ .history__p.border-top {
+  border-top: 1px solid rgba($color: #0f0f0f, $alpha: 0.1);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+ }
 }
