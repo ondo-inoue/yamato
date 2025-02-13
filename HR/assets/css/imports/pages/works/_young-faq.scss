@@ -1,7 +1,7 @@
 //----- content -----//
 .page-young-faq {
  .youngFaq-staff-list {
-  width: 102.4rem;
+  width: 124rem;
   margin: 14rem auto 0;
   @include sp {
    width: 100%;
@@ -12,7 +12,7 @@
  .basic-grid {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   @include sp {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -22,7 +22,11 @@
  }
 
  .development__container {
-  gap: 2.4rem;
+  gap: 9.5rem;
+  @include sp {
+   gap: 2.4rem;
+   margin-bottom: 2.4rem;
+  }
  }
 
  //----- 就活生へのメッセージ -----//
