@@ -34,11 +34,15 @@
  }
 
  //----- 先輩社員の画像配置（SP版のみ） -----//
+ .youngFaq-chara {
+  display: none;
+ }
  @include sp {
   .charaBox {
    position: relative;
   }
   .youngFaq-chara {
+   display: block;
    position: absolute;
    right: 4rem;
    bottom: 2.3rem;
